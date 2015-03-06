@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Document Similarity | initrc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Document Similarity">
+<meta property="og:url" content="http://initrc.github.io/2013/12/25/document-similarity/index.html">
+<meta property="og:site_name" content="initrc">
+<meta property="og:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Document Similarity">
+<meta name="twitter:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
+<meta property="fb:app_id" content="473126212800719">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  
+  
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-45242431-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+  
+    <link href='//fonts.googleapis.com/css?family=Titillium+Web:300,400,600' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div class="container">
+      <div class="container-inner">
+        <div id="header-title">
+          <h1 class="logo-wrap">
+            <a href="/" class="logo"></a>
+          </h1>
+          
+            <h2 class="subtitle-wrap">
+              <p class="subtitle">initrc</p>
+            </h2>
+          
+        </div>
+        <div id="header-inner" class="nav-container">
+          <a id="main-nav-toggle" class="nav-icon"></a>
+          <div class="nav-container-inner">
+            <ul id="main-nav">
+              
+                <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
+              
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/code/">Code</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/painting/">Painting</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/piano/">Piano</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/travel/">Travel</a></li></ul>
+                  
+            </ul>
+            <nav id="sub-nav">
+              <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="q" value="site:http://initrc.github.io"></form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <div class="main-body container-inner">
+        <div class="main-body-inner">
+          <section id="main">
+            <div class="main-body-header">
+
+              <h1 class="header"><a class="page-title-link" href="/categories/code/">Code</a></h1>
+            </div>
+            <div class="main-body-content">
+              
+  <article id="post-document-similarity" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
+  
+    <h1 class="article-title" itemprop="name">
+      Document Similarity
+    </h1>
+  
+
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2013/12/25/document-similarity/" class="article-date">
+  <time datetime="2013-12-25T20:42:54.000Z" itemprop="datePublished">2013.12.25</time>
+</a>
+      </p>
+      <div class="article-entry" itemprop="articleBody">
+        <p>Back in 2011, I created a web app with <a href="https://www.djangoproject.com/" target="_blank" rel="external">django</a> to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to rewrite the algorithm. To minimize the project size, I got rid of all the bells and whistles of CSS and HTML5 and focused on the algorithm. To add more fun, I also tried <a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a> to see how JavaScript handles scientific calculation.</p>
+<h1 id="Simpy"><a href="https://github.com/initrc/simpy" target="_blank" rel="external">Simpy</a></h1><p>The goal is to calculate the similarity of two English docs.</p>
+<h2 id="Preprocessing">Preprocessing</h2><h3 id="English_words">English words</h3><p>Regular expression <code>[a-zA-Z-&#39;]+</code></p>
+<h3 id="Lowercase">Lowercase</h3><p>‘Correctness’ =&gt; ‘correctness’</p>
+<h3 id="Stopwords">Stopwords</h3><p>Filter out the stopwords. E.g., ‘a’, ‘the’, etc.</p>
+<h3 id="Stemming">Stemming</h3><p>‘correctness’ =&gt; ‘correct’<br>‘cats’ =&gt; ‘cat’<br>‘meeting’ =&gt; ‘meet’</p>
+<p>I applied the <a href="http://tartarus.org/martin/PorterStemmer/" target="_blank" rel="external">Porter Stemming algorithm</a>.</p>
+<h2 id="Binary_Vector">Binary Vector</h2><ol>
+<li>Build a hashmap that maps each word to an index.</li>
+<li>Build a hashset for each doc that stores the words for fast lookup.</li>
+<li>Build a binary vector for each doc with the index info in the hashmap as the vector index, and 1 as the value if the word is in the hashset, 0 otherwise.</li>
+</ol>
+<p>Let v1 and v2 be the two vectors, the similarity will be:<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1 <span class="keyword">*</span> v2 / (norm(v1) <span class="keyword">*</span> norm(v2))</span><br></pre></td></tr></table></figure></p>
+<h2 id="Example:">Example:</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">doc1 = <span class="value"><span class="string">"Columbia University is in the City of New York."</span></span></span></span><br><span class="line"><span class="setting">doc2 = <span class="value"><span class="string">"Columbia University was founded in 1754."</span></span></span></span><br></pre></td></tr></table></figure>
+<p>After preprocessing:<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">doc<span class="number">1</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'city'</span>, <span class="string">'york'</span>]</span><br><span class="line">doc<span class="number">2</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'found'</span>]</span><br><span class="line"></span><br><span class="line">map = &#123;<span class="string">'columbia'</span>:<span class="number">0</span>, <span class="string">'university'</span>:<span class="number">1</span>, <span class="string">'city'</span>:<span class="number">2</span>, <span class="string">'york'</span>:<span class="number">3</span>, <span class="string">'found'</span>:<span class="number">4</span>&#125;</span><br><span class="line">v<span class="number">1</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">v<span class="number">2</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">similarity = <span class="number">2</span> / <span class="comment">(2 * 1.732)</span> = <span class="number">57.74</span><span class="preprocessor">%</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Implementation">Implementation</h2><p>Since Python is not good at numerical operations, I let <a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> take care of vector dot product, normalization, and zero filling.<br>The hashmap and hashset are Python dict and set.</p>
+<h1 id="Simjs"><a href="https://github.com/initrc/simjs" target="_blank" rel="external">Simjs</a></h1><h2 id="Framework">Framework</h2><p>I built simjs on <a href="http://expressjs.com/" target="_blank" rel="external">express</a>. I love how simple and minimal it is, but it really needs better documentation.<br>For example, I have an Ajax call and need to grab the request data at the server side. In django, it would be:<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = request<span class="class">.POST</span><span class="class">.get</span>(<span class="string">'doc1'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>In express, it would be:<br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = req.<span class="keyword">body</span>.doc1;</span><br></pre></td></tr></table></figure></p>
+<p>But I have no idea that it needs a middleware for such a common function.<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">app</span>.<span class="keyword">use</span>(express.bodyParser());</span><br></pre></td></tr></table></figure></p>
+<p>The <a href="http://expressjs.com/guide.html" target="_blank" rel="external">guide</a> page did have <code>bodyParser</code> in a code snippet, but there’s no description at all.</p>
+<h2 id="Template_Engine">Template Engine</h2><p><a href="http://twitter.github.io/hogan.js/" target="_blank" rel="external">Hogan</a> is a compiler for the logic-less <a href="http://mustache.github.io/" target="_blank" rel="external">Mustache</a> templating language. The <a href="http://jsperf.com/mustache-hogan-handlebars-underscore-ejs-jqueryejs-pure/13" target="_blank" rel="external">benchmark</a> looks great.</p>
+<p>I didn’t get a chance to use it though since there’s not much UI.</p>
+<h2 id="Implementation-1">Implementation</h2><p>The algorithm is the same, but JavaScript lacks library support. There’s no equivalent of numpy, and <code>{}</code> is not really a <del>good</del> hashmap or hashset.</p>
+<p>Surprisingly, utilities like I/O, file path, regular expression and string parsing are pretty good.</p>
+<p>Regular expression actually looks better than Python.<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// js</span></span><br><span class="line">doc.match(<span class="regexp">/[a-zA-Z-']+/g</span>)</span><br><span class="line"><span class="comment">// python</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.<span class="keyword">compile</span>(<span class="string">"[a-z\-']+"</span>, re.I).<span class="keyword">findall</span>(doc)</span><br></pre></td></tr></table></figure></p>
+<h1 id="Benchmark">Benchmark</h1><p>Here’s the result of comparing <a href="http://www.gutenberg.org/ebooks/2265" target="_blank" rel="external">Hamlet</a> (180KB) and <a href="http://www.gutenberg.org/ebooks/2267" target="_blank" rel="external">Othello</a> (168KB).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><code>Implementation</code></th>
+<th style="text-align:center"><code>Time</code></th>
+<th style="text-align:center"><code>Lines of code</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">JavaScript</td>
+<td style="text-align:center">4.74s</td>
+<td style="text-align:center">86</td>
+</tr>
+<tr>
+<td style="text-align:center">Python 2.7.5</td>
+<td style="text-align:center">0.80s</td>
+<td style="text-align:center">59</td>
+</tr>
+<tr>
+<td style="text-align:center">Python 3.3.2</td>
+<td style="text-align:center">0.94s</td>
+<td style="text-align:center">58</td>
+</tr>
+</tbody>
+</table>
+<p>The Python implementation is about 5-6 times faster than JavaScript, and 30% less code.</p>
+<p>Not sure why Python 3 is slower than 2. Set operations on Python 3 should be faster. I guess the difference is on numpy.</p>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://initrc.github.io/2013/12/25/document-similarity/" data-id="ci6x8e75w001od6vv8dj5l34p" class="article-share-link">Share</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/">django</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+      </footer>
+    </div>
+  </article>
+  
+
+            </div>
+          </section>
+          <aside id="sidebar">
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+  <div class="sidebar-top">
+    <p>follow:</p>
+    <ul class="social-links">
+      
+        <li><a class="social-tooltip" title="pinterest" href="https://pinterest.com/initrc"><i id="icon-pinterest" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="twitter" href="https://twitter.com/initrc"><i id="icon-twitter" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="github" href="https://github.com/initrc"><i id="icon-github" class="icon"></i></a></li>
+      
+        <li><a class="social-tooltip" title="rss" href="/"><i id="icon-rss" class="icon"></i></a></li>
+      
+    </ul>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/04/06/runner-020/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <p class="article-nav-title">
+        
+          Runner 0.2.0
+        
+      </p>
+      <i class="icon" id="icon-chevron-right"></i>
+    </a>
+  
+  
+    <a href="/2013/11/27/jumping-to-python-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <p class="article-nav-title">Jumping to Python 3</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
+  
+  <div class="widgets-container">
+    
+      
+  <div class="widget-wrap">
+    <h3 class="widget-title">recents</h3>
+    <div class="widget">
+      <ul id="recent-post">
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2015/01/25/secret-base-piano-cover/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/piano/">Piano</a></p>
+              <p class="item-title"><a href="/2015/01/25/secret-base-piano-cover/" class="title">Secret Base / Piano Cover</a></p>
+              <p class="item-date"><time datetime="2015-01-25T23:30:07.000Z" itemprop="datePublished">2015.1.25</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2015/01/20/cherry-blossom-painting/" class="thumbnail">
+  
+    <span style="background-image:url(/images/sakura.jpg
+)" alt="Cherry Blossom / Painting" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/painting/">Painting</a></p>
+              <p class="item-title"><a href="/2015/01/20/cherry-blossom-painting/" class="title">Cherry Blossom / Painting</a></p>
+              <p class="item-date"><time datetime="2015-01-21T06:24:23.000Z" itemprop="datePublished">2015.1.20</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/12/27/aloha-hawaii/" class="thumbnail">
+  
+    <span style="background-image:url(https://farm9.staticflickr.com/8587/15938464908_335a6f8999_k_d.jpg
+)" alt="Aloha Hawaii" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/travel/">Travel</a></p>
+              <p class="item-title"><a href="/2014/12/27/aloha-hawaii/" class="title">Aloha Hawaii</a></p>
+              <p class="item-date"><time datetime="2014-12-28T02:28:16.000Z" itemprop="datePublished">2014.12.27</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/11/15/sadness-and-sorrow-piano-cover/" class="thumbnail">
+  
+    <span class="thumbnail-image thumbnail-none"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/piano/">Piano</a></p>
+              <p class="item-title"><a href="/2014/11/15/sadness-and-sorrow-piano-cover/" class="title">Sadness and Sorrow / Piano Cover</a></p>
+              <p class="item-date"><time datetime="2014-11-16T02:57:02.000Z" itemprop="datePublished">2014.11.15</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2014/09/21/theme-single/" class="thumbnail">
+  
+    <span style="background-image:url(/images/theme-single.png
+)" alt="Theme Single" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/code/">Code</a></p>
+              <p class="item-title"><a href="/2014/09/21/theme-single/" class="title">Theme Single</a></p>
+              <p class="item-date"><time datetime="2014-09-22T05:57:20.000Z" itemprop="datePublished">2014.9.21</time></p>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/code/">Code</a><span class="category-list-count">14</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/painting/">Painting</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/piano/">Piano</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">Travel</a><span class="category-list-count">7</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-float">
+    <h3 class="widget-title">tag cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/django/" style="font-size: 10px;">django</a><a href="/tags/git/" style="font-size: 10px;">git</a><a href="/tags/hexo/" style="font-size: 16px;">hexo</a><a href="/tags/hiking/" style="font-size: 14px;">hiking</a><a href="/tags/js/" style="font-size: 10px;">js</a><a href="/tags/keyboard/" style="font-size: 10px;">keyboard</a><a href="/tags/node/" style="font-size: 10px;">node</a><a href="/tags/painting/" style="font-size: 10px;">painting</a><a href="/tags/photo/" style="font-size: 20px;">photo</a><a href="/tags/piano/" style="font-size: 12px;">piano</a><a href="/tags/pinterest/" style="font-size: 10px;">pinterest</a><a href="/tags/plugin/" style="font-size: 14px;">plugin</a><a href="/tags/python/" style="font-size: 12px;">python</a><a href="/tags/theme/" style="font-size: 16px;">theme</a><a href="/tags/tmux/" style="font-size: 10px;">tmux</a><a href="/tags/travel/" style="font-size: 20px;">travel</a><a href="/tags/vim/" style="font-size: 18px;">vim</a>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap widget-list">
+    <h3 class="widget-title">archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+  </div>
+</aside>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+  
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon" id="icon-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="/" class="logo"></a>
+        </h1>
+        <p>&copy; 2015 David Shi</p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+
+
+<script src="/js/html-patch.js" type="text/javascript"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
