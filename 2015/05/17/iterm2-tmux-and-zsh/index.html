@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>initrc</title>
+  <title>iTerm2, Tmux and Zsh | initrc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="initrc">
-<meta property="og:url" content="http://initrc.github.io/tags/pinterest/index.html">
+  <meta name="description" content="Tmux served me well on Linux and Mac, but since we started to host out web and api build sessions in tmux at work, I felt a little awkward to have a tmux session inside another. Plus search is not ide">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iTerm2, Tmux and Zsh">
+<meta property="og:url" content="http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/index.html">
 <meta property="og:site_name" content="initrc">
-<meta property="og:description">
+<meta property="og:description" content="Tmux served me well on Linux and Mac, but since we started to host out web and api build sessions in tmux at work, I felt a little awkward to have a tmux session inside another. Plus search is not ide">
+<meta property="og:image" content="/images/rin-archer.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="initrc">
-<meta name="twitter:description">
+<meta name="twitter:title" content="iTerm2, Tmux and Zsh">
+<meta name="twitter:description" content="Tmux served me well on Linux and Mac, but since we started to host out web and api build sessions in tmux at work, I felt a little awkward to have a tmux session inside another. Plus search is not ide">
 <meta property="fb:app_id" content="473126212800719">
   
   
@@ -91,44 +92,67 @@ ga('send', 'pageview');
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header"><i class="icon" id="icon-tag"></i>tag : <em>pinterest</em></h1>
+              <h1 class="header"><a class="page-title-link" href="/categories/code/">Code</a></h1>
             </div>
             <div class="main-body-content">
               
-      <div class="article-row">
-    
-        
-  <article class="article article-summary">
-    <div class="article-summary-inner">
-      <a href="/2014/07/28/hello-pinterest/" class="thumbnail">
+  <article id="post-iterm2-tmux-and-zsh" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+      <!--  -->
+      
+        <header class="article-header">
+          
   
-    <span style="background-image:url(/images/pinterest-balloons.jpg
-)" alt="Hello Pinterest" class="thumbnail-image"></span>
+    <h1 class="article-title" itemprop="name">
+      iTerm2, Tmux and Zsh
+    </h1>
   
 
+        </header>
+      
+      <p class="article-byline">
+        <a href="/2015/05/17/iterm2-tmux-and-zsh/" class="article-date">
+  <time datetime="2015-05-17T21:14:13.000Z" itemprop="datePublished">2015.5.17</time>
 </a>
-      <div class="article-meta">
-        <p class="category"><a class="article-category-link" href="/categories/code/">Code</a></p>
-        <p class="date"><time datetime="2014-07-29T06:37:11.000Z" itemprop="datePublished">2014.7.28</time></p>
-      </div>
-      <h2 class="article-title">
-        <a href="/2014/07/28/hello-pinterest/" class="title">Hello Pinterest</a>
-      </h2>
-      <p class="article-excerpt">
-        
-        Very pinteresty office! More on my Pinterest board.
-
-
       </p>
+      <div class="article-entry" itemprop="articleBody">
+        <p><img src="/images/rin-archer.jpg" alt="pixiv #48209606"></p>
+<p><a href="http://tmux.sourceforge.net/" target="_blank" rel="external">Tmux</a> served me well on Linux and Mac, but since we started to host out web and api build sessions in tmux at work, I felt a little awkward to have a tmux session inside another. Plus search is not ideal and pair-programming is almost impossible (although I’ve been asked a lot what this cool thing is). Now that I no longer code in Linux, it’s time to find something more productive.</p>
+<p><a href="https://www.iterm2.com/" target="_blank" rel="external">iTerm2</a> is not a replacement of tmux, but its split function is what I need most out of tmux. It’s also easy to switch between tabs and panes. I configured <code>⌃⌘h/j/k/l</code> to select panes in 4 directions. The tab bar is not as minimal as the one in tmux, and you can’t adjust the pane size by keyboard, but overall the UI is good enough. Search is way better.</p>
+<p>A few tips to minimalize and customize iTerm2.</p>
+<ol>
+<li>Uncheck “Show per-pane title bar with split panes”.</li>
+<li>Uncheck all checkboxes under “Window &amp; Tab Titles”.</li>
+<li>Uncheck “Dim inactive split panes”.</li>
+<li>Uncheck “Show bell icon in tabs”.</li>
+<li>Use my own color preset <a href="https://github.com/initrc/dotfiles/blob/master/iterm/spring.itermcolors" target="_blank" rel="external">Spring</a>.</li>
+<li>Change fonts to <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline-patched fonts</a>.</li>
+<li>Write a script to rename the terminal tab title. Also uncomment <code>DISABLE_AUTO_TITLE=&quot;true&quot;</code> in <code>~/.zshrc</code>.</li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">title</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> -ne <span class="string">"\033]0;"</span>$*<span class="string">"\007"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I also switched to <a href="http://www.zsh.org/" target="_blank" rel="external">zsh</a>/<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a>. Picked the <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">Agnoster</a> theme.</p>
+<p>Since oh-my-zsh configured <code>~/.zshrc</code>, it’s not a good idea to add <code>zshrc</code> to my <a href="https://github.com/initrc/dotfiles" target="_blank" rel="external">dotfiles</a> and link <code>~/.zshrc</code> to it. Instead, I moved the common scripts/aliases to <code>shrc</code> and sourced it in both <code>bashrc</code> and <code>zshrc</code>. See more in my <a href="https://github.com/initrc/dotfiles/blob/master/dot.sh" target="_blank" rel="external">dot.sh</a>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> safe-<span class="function"><span class="title">append</span></span>() &#123;</span><br><span class="line">    <span class="comment"># $1 filename, $2 string to append</span></span><br><span class="line">    <span class="keyword">if</span> [ <span class="operator">-s</span> <span class="string">"<span class="variable">$1</span>"</span> ] &amp;&amp; ! grep -q <span class="string">"<span class="variable">$2</span>"</span> <span class="string">"<span class="variable">$1</span>"</span>; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"<span class="variable">$2</span>"</span> &gt;&gt; <span class="variable">$1</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line">safe-append <span class="variable">$HOME</span>/.zshrc <span class="string">"source ~/.shrc"</span></span><br></pre></td></tr></table></figure>
+
+      </div>
+      <footer class="article-footer">
+        <a data-url="http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/" data-id="ci9t0f5qg000cqmvv6n0zl17g" class="article-share-link">Share</a>
+        
+          <a href="http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/#comments" class="article-comment-link">Comments</a>
+        
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iterm2/">iterm2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tmux/">tmux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zsh/">zsh</a></li></ul>
+
+      </footer>
     </div>
   </article>
-
-    
+  
+    <section id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
       </div>
-    
+    </section>
   
-  
-
 
             </div>
           </section>
@@ -148,6 +172,19 @@ ga('send', 'pageview');
       
     </ul>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/04/12/big-sur/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <p class="article-nav-title">Big Sur</p>
+      <i class="icon" id="icon-chevron-left"></i>
+    </a>
+  
+</nav>
+
   
   <div class="widgets-container">
     
@@ -301,11 +338,13 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'initrc';
   
+  var disqus_url = 'http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/';
+  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
