@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+  <title><![CDATA[initrc]]></title>
+  <subtitle><![CDATA[initrc]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://initrc.github.io//"/>
+  <updated>2015-07-14T08:54:55.000Z</updated>
+  <id>http://initrc.github.io//</id>
+  
+  <author>
+    <name><![CDATA[David Shi]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[See You Again]]></title>
+    <link href="http://initrc.github.io/2015/07/10/see-you-again/"/>
+    <id>http://initrc.github.io/2015/07/10/see-you-again/</id>
+    <published>2015-07-11T03:56:59.000Z</published>
+    <updated>2015-07-14T08:54:55.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/214091146&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Dedicate this piece to my friend Bravo. Took quite some time to learn and record it. Now back to the boring Czerny practice.</p>
+<p>P.S.: I played on some great pianos later this weekend after playing bubble soccer (very violent!). Here’s the list.</p>
+<p>Yamaha N1, CVP409GP, CLP575, CLP545, CLP535, CLP525, CP4, P255. Roland RD-800.</p>
+<p>The hybrid Yamaha N1 is in its own league at $6500. CVP409GP, CLP575 and CLP545 use the awesome Natural Wood X (NWX) key action. CLP545 is the cheapest model ($2800+) that has this action. CLP535 and CLP525 use GH3X and GH3 actions. The difference between NWX is GH3X is very noticeble. NMW is less resistent and more responsive. X in Yamaha models means let-off / escapement. You won’t feel that on GH3 or NW on CP4. P255 ($1299) is the cheapest of these pianos. It comes with the GH action that has only two sensors but it’s implemented better than any three-sensor action from Casio. The difference between GH and GH3 is quite small. The third sensor is for faster repitition. But just check out how <a href="https://www.youtube.com/user/kylelandry/" target="_blank" rel="external">Kyle Landry</a> plays on the GH action. I don’t think it’ll be a problem for most non-professionals. Roland RD-800 feels better than CP4 as you can feel the let-off.</p>
+<p>I tried a few Kawai pianos before and the keys feel easier to play on than Yamaha’s actions except NWX. Both their high end GH2 (CA97) and mid tier RH3 (CN35) / RH2 (ES7 at $1699 local, $1999 online) actions are very expressive.</p>
+<p><img src="/images/north-pole.jpg" alt="pixiv #48638741"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[iTerm2, Tmux and Zsh]]></title>
+    <link href="http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/"/>
+    <id>http://initrc.github.io/2015/05/17/iterm2-tmux-and-zsh/</id>
+    <published>2015-05-17T21:14:13.000Z</published>
+    <updated>2015-05-18T00:16:56.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/rin-archer.jpg" alt="pixiv #48209606"></p>
+<p><a href="http://tmux.sourceforge.net/" target="_blank" rel="external">Tmux</a> served me well on Linux and Mac, but since we started to host out web and api build sessions in tmux at work, I felt a little awkward to have a tmux session inside another. Plus its search/copy/paste functions made pair-programming almost impossible (although I’ve been asked a lot what this cool thing is). Time for a change, and it’s a lot easier since I only code on Mac these days.</p>
+<p><a href="https://www.iterm2.com/" target="_blank" rel="external">iTerm2</a> is not a replacement of tmux, but its split function is what I need most out of tmux. It’s also easy to switch between tabs and panes. I configured <code>⌃⌘h/j/k/l</code> to select panes in 4 directions. The tab bar is not as minimal as the one in tmux, and you can’t adjust the pane size by keyboard, but overall the UI is good enough. Search is way better.</p>
+<p>A few tips to minimalize and customize iTerm2.</p>
+<ol>
+<li>Uncheck “Show per-pane title bar with split panes”.</li>
+<li>Uncheck all checkboxes under “Window &amp; Tab Titles”.</li>
+<li>Uncheck “Dim inactive split panes”.</li>
+<li>Uncheck “Show bell icon in tabs”.</li>
+<li>Use my own color preset <a href="https://github.com/initrc/dotfiles/blob/master/iterm/spring.itermcolors" target="_blank" rel="external">Spring</a>.</li>
+<li>Change fonts to <a href="https://github.com/powerline/fonts" target="_blank" rel="external">powerline-patched fonts</a>.</li>
+<li>Write a script to rename the terminal tab title. Also uncomment <code>DISABLE_AUTO_TITLE=&quot;true&quot;</code> in <code>~/.zshrc</code>.</li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">title</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> -ne <span class="string">"\033]0;"</span>$*<span class="string">"\007"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>I also switched to <a href="http://www.zsh.org/" target="_blank" rel="external">zsh</a>/<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a>. Picked the <a href="https://gist.github.com/agnoster/3712874" target="_blank" rel="external">Agnoster</a> theme.</p>
+<p>Since oh-my-zsh configured <code>~/.zshrc</code>, it’s not a good idea to add <code>zshrc</code> to my <a href="https://github.com/initrc/dotfiles" target="_blank" rel="external">dotfiles</a> and link <code>~/.zshrc</code> to it as I always did. Instead, I moved the common scripts/aliases to <code>shrc</code> and sourced it in both <code>bashrc</code> and <code>zshrc</code>. See more in <a href="https://github.com/initrc/dotfiles/blob/master/dot.sh" target="_blank" rel="external">dot.sh</a>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> safe-<span class="function"><span class="title">append</span></span>() &#123;</span><br><span class="line">    <span class="comment"># $1 filename, $2 string to append</span></span><br><span class="line">    <span class="keyword">if</span> [ <span class="operator">-s</span> <span class="string">"<span class="variable">$1</span>"</span> ] &amp;&amp; ! grep -q <span class="string">"<span class="variable">$2</span>"</span> <span class="string">"<span class="variable">$1</span>"</span>; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"<span class="variable">$2</span>"</span> &gt;&gt; <span class="variable">$1</span></span><br><span class="line">    <span class="keyword">fi</span></span><br><span class="line">&#125;</span><br><span class="line">safe-append <span class="variable">$HOME</span>/.zshrc <span class="string">"source ~/.shrc"</span></span><br></pre></td></tr></table></figure>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/rin-archer.jpg" alt="pixiv #48209606"></p>
+<p><a href="http://tmux.sourceforge.net/" target="_blank" rel="external">Tmu]]>
+    </summary>
+    
+      <category term="iterm2" scheme="http://initrc.github.io/tags/iterm2/"/>
+    
+      <category term="tmux" scheme="http://initrc.github.io/tags/tmux/"/>
+    
+      <category term="zsh" scheme="http://initrc.github.io/tags/zsh/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Big Sur]]></title>
+    <link href="http://initrc.github.io/2015/04/12/big-sur/"/>
+    <id>http://initrc.github.io/2015/04/12/big-sur/</id>
+    <published>2015-04-13T06:59:59.000Z</published>
+    <updated>2015-04-18T01:37:25.000Z</updated>
+    <content type="html"><![CDATA[<p>Went hiking at Big Sur with friends this Sunday. A total of 330 miles of drive!</p>
+<p><img src="https://farm8.staticflickr.com/7613/17174816191_e276d5ce18_k_d.jpg" alt="View of Highway 1"><br><img src="https://farm8.staticflickr.com/7618/16989245559_140076f959_k_d.jpg" alt="Hiking"><br><img src="https://farm9.staticflickr.com/8729/16987674128_1fd9d4eb87_k_d.jpg" alt="Mountain and ocean views"></p>
+<p>We stopped at Carmel for lunch. This <a href="http://www.yelp.com/biz/a-w-shucks-cocktail-and-oyster-bar-carmel" target="_blank" rel="external">oyster bar</a> has really good oyster and crabs. Carmel also has some very nice art galleries.</p>
+<p><img src="https://farm8.staticflickr.com/7721/17149361186_fde775b0db_k_d.jpg" alt="Oyster at Carmel"><br><img src="https://farm9.staticflickr.com/8724/17149361886_ababf26104_k_d.jpg" alt="Crab salad at Carmel"></p>
+<p>And finally we had dinner at <a href="http://www.yelp.com/biz/little-sheep-mongolian-hot-pot-cupertino-3" target="_blank" rel="external">Little Sheep</a>. It was 9:30 when we got there and their kitchen closed at 10. They were so nice to wait until we finished at 11.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Went hiking at Big Sur with friends this Sunday. A total of 330 miles of drive!</p>
+<p><img src="https://farm8.staticflickr.com/7613/1717]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Fort Funston]]></title>
+    <link href="http://initrc.github.io/2015/04/04/fort-funston/"/>
+    <id>http://initrc.github.io/2015/04/04/fort-funston/</id>
+    <published>2015-04-05T00:41:32.000Z</published>
+    <updated>2015-04-05T00:57:15.000Z</updated>
+    <content type="html"><![CDATA[<p>Checked out this place after the piano lesson today for its famous hang gliding. I saw two gliders on the base, but no one was flying. It was super windy and there’s sand in the wind too. Not good for cameras so I only took a couple shots. The landscape looks just like what you’d see on a coastal trail in SF. Since I was so cold, I tweaked the image to be a little warmer.</p>
+<p><img src="https://farm8.staticflickr.com/7667/17035815275_219fa83b80_k_d.jpg" alt="Fort Funston"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Checked out this place after the piano lesson today for its famous hang gliding. I saw two gliders on the base, but no one was flying. It]]>
+    </summary>
+    
+      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[The Place Where Wishes Come True]]></title>
+    <link href="http://initrc.github.io/2015/03/29/the-place-where-wishes-come-true/"/>
+    <id>http://initrc.github.io/2015/03/29/the-place-where-wishes-come-true/</id>
+    <published>2015-03-30T02:38:26.000Z</published>
+    <updated>2015-03-30T06:01:36.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198342597&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Three easy covers in a week. This one is from Clannad. I tweaked a bit and added an ending to the <a href="http://ichigos.com/sheets/c" target="_blank" rel="external">sheet music</a>.</p>
+<p>I also finished the <a href="https://www.coursera.org/course/musicianship" target="_blank" rel="external">Developing Your Musicianship</a> course on coursera yesterday. The course is a little verbose but overall I like it, especially the ear training part.</p>
+<p>Back to music theory and boring fundamental practices. Hopefully I’ll cover something more challenging next time.</p>
+<p><img src="/images/the-place-where-wishes-come-true.jpg" alt="pixiv #35470184"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[回梦游仙]]></title>
+    <link href="http://initrc.github.io/2015/03/27/%E5%9B%9E%E6%A2%A6%E6%B8%B8%E4%BB%99/"/>
+    <id>http://initrc.github.io/2015/03/27/回梦游仙/</id>
+    <published>2015-03-28T05:50:04.000Z</published>
+    <updated>2015-03-30T03:00:28.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198067201&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Here’s a short piano cover from my favorite Chinese RPG series, <a href="http://zh.wikipedia.org/wiki/%E4%BB%99%E5%8A%8D%E5%A5%87%E4%BF%A0%E5%82%B3%E5%9B%9B" target="_blank" rel="external">仙剑奇侠传四</a>。</p>
+<p><img src="/images/回梦游仙.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Porcelain]]></title>
+    <link href="http://initrc.github.io/2015/03/22/porcelain-piano-cover/"/>
+    <id>http://initrc.github.io/2015/03/22/porcelain-piano-cover/</id>
+    <published>2015-03-23T06:06:30.000Z</published>
+    <updated>2015-03-30T03:00:40.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197234899&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>I started piano lessons again. My teacher has the sheet music of <a href="http://www.amazon.com/gp/product/B004I6J6BG/" target="_blank" rel="external">Porcelain</a> by Helen Jane Long. So here’s the cover.</p>
+<p><img src="/images/porcelain.jpg" alt="pixiv #48253260"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Secret Base]]></title>
+    <link href="http://initrc.github.io/2015/01/25/secret-base/"/>
+    <id>http://initrc.github.io/2015/01/25/secret-base/</id>
+    <published>2015-01-25T23:30:07.000Z</published>
+    <updated>2015-03-30T03:17:24.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187866011&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Secret Base as Anohana ED. My first piano cover in 2015.</p>
+<p>This is the first song I tried to learn and it took so many months. When I first searched it on YouTube, I found this <a href="https://www.youtube.com/watch?v=PgzuOXKd6Sg" target="_blank" rel="external">cover</a> by <a href="https://www.youtube.com/user/TehIshter" target="_blank" rel="external">Theishter</a>. The cover was the full version but the sheet music was only 3 pages. I was able to play the short version but then I found that <a href="https://www.youtube.com/user/ThePianoL" target="_blank" rel="external">ThePianoL</a> wrote the <a href="http://sheethost.com/sheet/ZiaAQS" target="_blank" rel="external">full version</a> of the arrangment in 9 pages and <a href="https://www.youtube.com/watch?v=GkzO9BCTtsY" target="_blank" rel="external">covered</a> it. There’s a part in the full version that requires continuous big jumps from both hands and I gave up due to lack of skills and frustration. After practicing Czerny and Hanon for a while I finally came back and managed to record this.</p>
+<p>My top 3 anime ending song of all time. Using the cherry blossom I just painted this week as the cover as it sort of fits Anohana. Recording a 6-minute cover is so tiring but well worth it.</p>
+<p><img src="/images/secret-base.jpg" alt="pixiv #18231910"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Cherry Blossom Painting]]></title>
+    <link href="http://initrc.github.io/2015/01/20/cherry-blossom-painting/"/>
+    <id>http://initrc.github.io/2015/01/20/cherry-blossom-painting/</id>
+    <published>2015-01-21T06:24:23.000Z</published>
+    <updated>2015-03-30T03:01:37.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/sakura.jpg" alt="Cherry Blossom"></p>
+<p>My first painting in 2015. <a href="http://www.pixiv.net/member_illust.php?mode=manga&amp;illust_id=46754602" target="_blank" rel="external">Instructions</a> by moiy.</p>
+<p>Painted in <a href="http://www.clipstudio.net/en/" target="_blank" rel="external">Clip Studio Paint</a>. Their website has awesome tutorials.</p>
+<p>The first half was quite boring, but it was so much fun after the form and multiple color layers were established.<br>Overall the line work was the hardest. 赛璐璐画风真是勾线勾到死！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/sakura.jpg" alt="Cherry Blossom"></p>
+<p>My first painting in 2015. <a href="http://www.pixiv.net/member_illust.php?mod]]>
+    </summary>
+    
+      <category term="painting" scheme="http://initrc.github.io/tags/painting/"/>
+    
+      <category term="Painting" scheme="http://initrc.github.io/categories/painting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Aloha Hawaii]]></title>
+    <link href="http://initrc.github.io/2014/12/27/aloha-hawaii/"/>
+    <id>http://initrc.github.io/2014/12/27/aloha-hawaii/</id>
+    <published>2014-12-28T02:28:16.000Z</published>
+    <updated>2015-03-08T00:03:09.000Z</updated>
+    <content type="html"><![CDATA[<p>This year’s holiday trip is Hawaii! I had some awesome Japanese food, rode a horse called Mercury, drove an ATV, and learned that my name in Hawaiian is Kawika, w pronounced as v. More photos on <a href="https://www.flickr.com/photos/davidsnooker/sets/72157649907986026/" target="_blank" rel="external">Flickr</a>.</p>
+<p><img src="https://farm9.staticflickr.com/8587/15938464908_335a6f8999_k_d.jpg" alt="Kualoa Ranch landscape"><br><img src="https://farm8.staticflickr.com/7582/15938634560_d1bf67d2c7_k_d.jpg" alt="Moss and black sand"><br><img src="https://farm8.staticflickr.com/7513/15503564364_7b63477a04_k_d.jpg" alt="Makapu&#39;u Point"><br><img src="https://farm8.staticflickr.com/7583/16124011331_c0d0a13e70_k_d.jpg" alt="Waikiki Beach sunset"><br><img src="https://farm9.staticflickr.com/8566/16123991091_673609b077_k_d.jpg" alt="Paitan chashu ramen from Yotteko-Ya"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This year’s holiday trip is Hawaii! I had some awesome Japanese food, rode a horse called Mercury, drove an ATV, and learned that my name]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Sadness and Sorrow]]></title>
+    <link href="http://initrc.github.io/2014/11/15/sadness-and-sorrow/"/>
+    <id>http://initrc.github.io/2014/11/15/sadness-and-sorrow/</id>
+    <published>2014-11-16T02:57:02.000Z</published>
+    <updated>2015-03-30T03:00:49.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177155182&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Sadness and Sorrow from Naruto OST. My very first piano cover.</p>
+<p><img src="/images/sadness-and-sorrow.jpg" alt="pixiv #41984327"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Theme Single]]></title>
+    <link href="http://initrc.github.io/2014/09/21/theme-single/"/>
+    <id>http://initrc.github.io/2014/09/21/theme-single/</id>
+    <published>2014-09-22T05:57:20.000Z</published>
+    <updated>2015-03-06T09:28:13.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/theme-single.jpg" alt="pixiv #48127313"></p>
+<p><a href="https://github.com/initrc/hexo-theme-single" target="_blank" rel="external">Single</a> is a single-column <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> theme based on <a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a>.</p>
+<p>After all the crazy schedules, I’m finally back to my blog and starting to back fill posts. After upgrading Hexo to 2.8, my old theme <a href="https://github.com/initrc/hexo-theme-candy" target="_blank" rel="external">Candy</a> no longer works. So here’s the new one.</p>
+<h1 id="Changelog_0-1-0">Changelog 0.1.0</h1><ol>
+<li>Change the link color to coral green <code>#4bc4af</code></li>
+<li>Remove the banner and menus to simplify the header</li>
+<li>Add Pinterest, Twitter and Github icons to the header</li>
+<li>Only show the tag cloud in the sidebar and move it to the bottom</li>
+<li>Use <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a> color scheme for syntax highlighting</li>
+<li>Tweak caption font styles</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/theme-single.jpg" alt="pixiv #48127313"></p>
+<p><a href="https://github.com/initrc/hexo-theme-single" target="_blank" r]]>
+    </summary>
+    
+      <category term="hexo" scheme="http://initrc.github.io/tags/hexo/"/>
+    
+      <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Spring Color Scheme]]></title>
+    <link href="http://initrc.github.io/2014/09/21/spring-color-scheme/"/>
+    <id>http://initrc.github.io/2014/09/21/spring-color-scheme/</id>
+    <published>2014-09-22T02:24:42.000Z</published>
+    <updated>2015-05-17T23:38:48.000Z</updated>
+    <content type="html"><![CDATA[<p>My old vim color scheme was based on <a href="http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484" target="_blank" rel="external">Mustang</a>. I liked the colors a lot and tweaked the already good-looking green and purple and have used it for years. Like many other vim color schemes, the source code is not very well structured. Today I came across <a href="https://github.com/ChrisKempson/Tomorrow-Theme" target="_blank" rel="external">Tomorrow Theme</a> when I was tweaking my <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> theme. The code is so organized that I literally only have to define seven colors at the top.</p>
+<p>So here’s my first vim color scheme, <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a>.</p>
+<p>It’s actually not easy to pick all seven rainbow colors. The first three are easy. I inherited <code>grass green</code> and <code>Athena purple</code>, and picked <code>crayola yellow</code>, which has the perfect brightness and saturation. Red and orange are hard. I want them to pop out but not too bright, and there should be enough difference between them, but not too much to feel too many colors on the screen. It took so long and I finally picked <code>pink salmon</code> and <code>atomic tangerine</code>. The same criteria for aqua and blue. The <code>Columbia blue</code> on Wikipedia is too dim so I saturated it a bit, and picked <code>medium aquamarine</code> for aqua.</p>
+<figure class="highlight vim"><figcaption><span>vim/colors/spring.vim</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">s:foreground</span> = <span class="string">"c5c8c6"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:background</span> = <span class="string">"1d1f21"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:selection</span> = <span class="string">"373b41"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:line</span> = <span class="string">"282a2e"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:comment</span> = <span class="string">"969896"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:red</span> = <span class="string">"ff91a4"</span> <span class="string">" pink salmon</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:orange</span> = <span class="string">"ff9966"</span> <span class="string">" atomic tangerine</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:yellow</span> = <span class="string">"fce883"</span> <span class="string">" crayola</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:green</span> = <span class="string">"b1d631"</span> <span class="string">" grass</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:aqua</span> = <span class="string">"66cdaa"</span> <span class="string">" medium aquamarine</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:blue</span> = <span class="string">"86c3e6"</span> <span class="string">" light columbia</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:purple</span> = <span class="string">"7e8aa2"</span> <span class="string">" athena</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:window</span> = <span class="string">"4d5057"</span></span><br></pre></td></tr></table></figure>
+<p>Here’s a screenshot of how js and python code look in <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a>.</p>
+<p><img src="https://raw.githubusercontent.com/initrc/spring/master/screenshot.png" alt="Spring Color Scheme"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>My old vim color scheme was based on <a href="http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484" target="_blank" rel="ex]]>
+    </summary>
+    
+      <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
+    
+      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Caps Lock, Ctrl, and Esc]]></title>
+    <link href="http://initrc.github.io/2014/09/20/caps-lock-ctrl-and-esc/"/>
+    <id>http://initrc.github.io/2014/09/20/caps-lock-ctrl-and-esc/</id>
+    <published>2014-09-21T06:27:29.000Z</published>
+    <updated>2015-03-08T00:00:34.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/caps-lock-ctrl-and-esc.jpg" alt="pixiv #47004916"></p>
+<p>I brought my mechanical keyboard to work and all I have at home is an Apple wireless keyboard. It pleases my eyes, but not my fingers, especially when I hit <code>ctrl</code> a lot in tmux. I remapped <code>fn</code> to <code>ctrl</code> but my pinkie still hates the flat keys.</p>
+<p>One <a href="http://c2.com/cgi/wiki?RemapCapsLock" target="_blank" rel="external">idea</a> I read quite a while ago was to use <code>caps lock</code>:<br>Remap <code>caps lock</code> to <code>ctrl</code>, but when it’s pressed as a single key, remap it to <code>esc</code>.<br>This makes the <code>ctrl+a</code> prefix in tmux and <code>esc</code> in vim a lot easier to hit.</p>
+<p>It’s pretty easy to configure if you’re on mac.</p>
+<ol>
+<li>System Preferences -&gt; Keyboard -&gt; Modifier Keys -&gt; Caps Lock Key: No Action</li>
+<li>Install <a href="https://pqrs.org/osx/karabiner/seil.html" target="_blank" rel="external">Seil</a> and remap <code>caps lock</code> to keycode 59</li>
+<li>Install <a href="https://pqrs.org/osx/karabiner/" target="_blank" rel="external">Karabiner</a> and select <code>Control_L to Control_L (+ When you type Control_L only, send Escape)</code></li>
+</ol>
+<p>Karabiner overrides mac’s key repeat settings. The default is too slow so I changed <code>Delay Until Repeat</code> to 200ms and <code>Key Repeat</code> to 30ms.</p>
+<p>P.S.: Seil was called PCKeyboardHack, and Karabiner was called KeyRemap4MacBook.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/caps-lock-ctrl-and-esc.jpg" alt="pixiv #47004916"></p>
+<p>I brought my mechanical keyboard to work and all I have at ho]]>
+    </summary>
+    
+      <category term="keyboard" scheme="http://initrc.github.io/tags/keyboard/"/>
+    
+      <category term="tmux" scheme="http://initrc.github.io/tags/tmux/"/>
+    
+      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Mori Point]]></title>
+    <link href="http://initrc.github.io/2014/09/14/mori-point/"/>
+    <id>http://initrc.github.io/2014/09/14/mori-point/</id>
+    <published>2014-09-14T18:53:49.000Z</published>
+    <updated>2015-03-06T07:15:00.000Z</updated>
+    <content type="html"><![CDATA[<p>Went hiking at Mori Point in the afternoon. Beautiful ocean view!<br>Although not high at all, the hill near the beach is steep and slippery. Pretty challenging.</p>
+<p><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/83968835/16774e0d8a35f0de0a38b549499aece0fae719dc/2048.jpg" alt="Mori Point"><br><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/83968841/a75b712e4f002eca06f7bc012074bfdcadc8955c/2048.jpg" alt="Mori Point"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Went hiking at Mori Point in the afternoon. Beautiful ocean view!<br>Although not high at all, the hill near the beach is steep and slipp]]>
+    </summary>
+    
+      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello Pinterest]]></title>
+    <link href="http://initrc.github.io/2014/07/28/hello-pinterest/"/>
+    <id>http://initrc.github.io/2014/07/28/hello-pinterest/</id>
+    <published>2014-07-29T06:37:11.000Z</published>
+    <updated>2015-03-06T08:12:51.000Z</updated>
+    <content type="html"><![CDATA[<p>Very pinteresty office! More on my <a href="http://www.pinterest.com/initrc/pinterest/" target="_blank" rel="external">Pinterest board</a>.</p>
+<p><img src="/images/pinterest-balloons.jpg" alt="Pinterest Balloons"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Very pinteresty office! More on my <a href="http://www.pinterest.com/initrc/pinterest/" target="_blank" rel="external">Pinterest board</a]]>
+    </summary>
+    
+      <category term="pinterest" scheme="http://initrc.github.io/tags/pinterest/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Back Home]]></title>
+    <link href="http://initrc.github.io/2014/06/06/back-home/"/>
+    <id>http://initrc.github.io/2014/06/06/back-home/</id>
+    <published>2014-06-07T06:21:28.000Z</published>
+    <updated>2015-03-06T07:12:56.000Z</updated>
+    <content type="html"><![CDATA[<p>The interview season is over, and I’m finally back home! It takes so long!</p>
+<p><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/74052217/cee03648500ef83932b0bf72a9fa68b24679c82b/2048.jpg" alt="浦西 Puxi, Shanghai"><br><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/74052253/b30d2183acd03f8d04d7f0bda330f9e1e32b4ae2/2048.jpg" alt="浦东 Pudong, Shanghai"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>The interview season is over, and I’m finally back home! It takes so long!</p>
+<p><img src="https://gp1.wac.edgecastcdn.net/806614/photos]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Runner 0.2.0]]></title>
+    <link href="http://initrc.github.io/2014/04/06/runner-020/"/>
+    <id>http://initrc.github.io/2014/04/06/runner-020/</id>
+    <published>2014-04-06T22:46:39.000Z</published>
+    <updated>2015-03-07T22:57:13.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/runner.jpg" alt="pixiv #43395018"></p>
+<p>Added JavaScript support and autosave for <a href="https://github.com/initrc/runner" target="_blank" rel="external">Runner</a>.</p>
+<h1 id="Changelog_0-2-0">Changelog 0.2.0</h1><ol>
+<li>Add support for JavaScript that runs on Node.js</li>
+<li><code>&lt;leader&gt;r</code> saves the code before running it</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/runner.jpg" alt="pixiv #43395018"></p>
+<p>Added JavaScript support and autosave for <a href="https://github.com/initrc/]]>
+    </summary>
+    
+      <category term="plugin" scheme="http://initrc.github.io/tags/plugin/"/>
+    
+      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Document Similarity]]></title>
+    <link href="http://initrc.github.io/2013/12/25/document-similarity/"/>
+    <id>http://initrc.github.io/2013/12/25/document-similarity/</id>
+    <published>2013-12-25T20:42:54.000Z</published>
+    <updated>2015-03-07T23:11:18.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/document-similarity.jpg" alt="pixiv #28834242"></p>
+<p>Back in 2011, I created a web app with <a href="https://www.djangoproject.com/" target="_blank" rel="external">django</a> to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to rewrite the algorithm. To minimize the project size, I got rid of all the bells and whistles of CSS and HTML5 and focused on the algorithm. To add more fun, I also tried <a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a> to see how JavaScript handles scientific calculation.</p>
+<h1 id="Simpy"><a href="https://github.com/initrc/simpy" target="_blank" rel="external">Simpy</a></h1><p>The goal is to calculate the similarity of two English docs.</p>
+<h2 id="Preprocessing">Preprocessing</h2><h3 id="English_words">English words</h3><p>Regular expression <code>[a-zA-Z-&#39;]+</code></p>
+<h3 id="Lowercase">Lowercase</h3><p>‘Correctness’ =&gt; ‘correctness’</p>
+<h3 id="Stopwords">Stopwords</h3><p>Filter out the stopwords. E.g., ‘a’, ‘the’, etc.</p>
+<h3 id="Stemming">Stemming</h3><p>‘correctness’ =&gt; ‘correct’<br>‘cats’ =&gt; ‘cat’<br>‘meeting’ =&gt; ‘meet’</p>
+<p>I applied the <a href="http://tartarus.org/martin/PorterStemmer/" target="_blank" rel="external">Porter Stemming algorithm</a>.</p>
+<h2 id="Binary_Vector">Binary Vector</h2><ol>
+<li>Build a hashmap that maps each word to an index.</li>
+<li>Build a hashset for each doc that stores the words for fast lookup.</li>
+<li>Build a binary vector for each doc with the index info in the hashmap as the vector index, and 1 as the value if the word is in the hashset, 0 otherwise.</li>
+</ol>
+<p>Let v1 and v2 be the two vectors, the similarity will be:<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1 <span class="keyword">*</span> v2 / (norm(v1) <span class="keyword">*</span> norm(v2))</span><br></pre></td></tr></table></figure></p>
+<h2 id="Example:">Example:</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">doc1 = <span class="value"><span class="string">"Columbia University is in the City of New York."</span></span></span></span><br><span class="line"><span class="setting">doc2 = <span class="value"><span class="string">"Columbia University was founded in 1754."</span></span></span></span><br></pre></td></tr></table></figure>
+<p>After preprocessing:<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">doc<span class="number">1</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'city'</span>, <span class="string">'york'</span>]</span><br><span class="line">doc<span class="number">2</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'found'</span>]</span><br><span class="line"></span><br><span class="line">map = &#123;<span class="string">'columbia'</span>:<span class="number">0</span>, <span class="string">'university'</span>:<span class="number">1</span>, <span class="string">'city'</span>:<span class="number">2</span>, <span class="string">'york'</span>:<span class="number">3</span>, <span class="string">'found'</span>:<span class="number">4</span>&#125;</span><br><span class="line">v<span class="number">1</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">v<span class="number">2</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">similarity = <span class="number">2</span> / <span class="comment">(2 * 1.732)</span> = <span class="number">57.74</span><span class="preprocessor">%</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Implementation">Implementation</h2><p>Since Python is not good at numerical operations, I let <a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> take care of vector dot product, normalization, and zero filling.<br>The hashmap and hashset are Python dict and set.</p>
+<h1 id="Simjs"><a href="https://github.com/initrc/simjs" target="_blank" rel="external">Simjs</a></h1><h2 id="Framework">Framework</h2><p>I built simjs on <a href="http://expressjs.com/" target="_blank" rel="external">express</a>. I love how simple and minimal it is, but it really needs better documentation.<br>For example, I have an Ajax call and need to grab the request data at the server side. In django, it would be:<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = request<span class="class">.POST</span><span class="class">.get</span>(<span class="string">'doc1'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>In express, it would be:<br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = req.<span class="keyword">body</span>.doc1;</span><br></pre></td></tr></table></figure></p>
+<p>But I have no idea that it needs a middleware for such a common function.<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">app</span>.<span class="keyword">use</span>(express.bodyParser());</span><br></pre></td></tr></table></figure></p>
+<p>The <a href="http://expressjs.com/guide.html" target="_blank" rel="external">guide</a> page did have <code>bodyParser</code> in a code snippet, but there’s no description at all.</p>
+<h2 id="Template_Engine">Template Engine</h2><p><a href="http://twitter.github.io/hogan.js/" target="_blank" rel="external">Hogan</a> is a compiler for the logic-less <a href="http://mustache.github.io/" target="_blank" rel="external">Mustache</a> templating language. The <a href="http://jsperf.com/mustache-hogan-handlebars-underscore-ejs-jqueryejs-pure/13" target="_blank" rel="external">benchmark</a> looks great.</p>
+<p>I didn’t get a chance to use it though since there’s not much UI.</p>
+<h2 id="Implementation-1">Implementation</h2><p>The algorithm is the same, but JavaScript lacks library support. There’s no equivalent of numpy, and <code>{}</code> is not really a <del>good</del> hashmap or hashset.</p>
+<p>Surprisingly, utilities like I/O, file path, regular expression and string parsing are pretty good.</p>
+<p>Regular expression actually looks better than Python.<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// js</span></span><br><span class="line">doc.match(<span class="regexp">/[a-zA-Z-']+/g</span>)</span><br><span class="line"><span class="comment">// python</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.<span class="keyword">compile</span>(<span class="string">"[a-z\-']+"</span>, re.I).<span class="keyword">findall</span>(doc)</span><br></pre></td></tr></table></figure></p>
+<h1 id="Benchmark">Benchmark</h1><p>Here’s the result of comparing <a href="http://www.gutenberg.org/ebooks/2265" target="_blank" rel="external">Hamlet</a> (180KB) and <a href="http://www.gutenberg.org/ebooks/2267" target="_blank" rel="external">Othello</a> (168KB).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><code>Implementation</code></th>
+<th style="text-align:center"><code>Time</code></th>
+<th style="text-align:center"><code>Lines of code</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">JavaScript</td>
+<td style="text-align:center">4.74s</td>
+<td style="text-align:center">86</td>
+</tr>
+<tr>
+<td style="text-align:center">Python 2.7.5</td>
+<td style="text-align:center">0.80s</td>
+<td style="text-align:center">59</td>
+</tr>
+<tr>
+<td style="text-align:center">Python 3.3.2</td>
+<td style="text-align:center">0.94s</td>
+<td style="text-align:center">58</td>
+</tr>
+</tbody>
+</table>
+<p>The Python implementation is about 5-6 times faster than JavaScript, and 30% less code.</p>
+<p>Not sure why Python 3 is slower than 2. Set operations on Python 3 should be faster. I guess the difference is on numpy.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/document-similarity.jpg" alt="pixiv #28834242"></p>
+<p>Back in 2011, I created a web app with <a href="https://www.djan]]>
+    </summary>
+    
+      <category term="django" scheme="http://initrc.github.io/tags/django/"/>
+    
+      <category term="js" scheme="http://initrc.github.io/tags/js/"/>
+    
+      <category term="node" scheme="http://initrc.github.io/tags/node/"/>
+    
+      <category term="python" scheme="http://initrc.github.io/tags/python/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[To Python 3]]></title>
+    <link href="http://initrc.github.io/2013/11/27/to-python-3/"/>
+    <id>http://initrc.github.io/2013/11/27/to-python-3/</id>
+    <published>2013-11-28T07:53:00.000Z</published>
+    <updated>2015-03-07T23:20:07.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/to-python-3.jpg" alt="pixiv #41028787"></p>
+<p>It’s almost 5 years since Python 3 was launched. Quite a lot of popular libraries like <a href="http://www.numpy.org/" target="_blank" rel="external">NumPy</a> and <a href="https://www.djangoproject.com/" target="_blank" rel="external">Django</a> are already on 3. Major Linux distributions will soon ship with Python 3. It’s that time.</p>
+<p>I’ll port my <a href="http://projecteuler.net/" target="_blank" rel="external">Project Euler</a> python solutions this Thanksgiving. A good chance to read and improve them as well.</p>
+<p>A few links in case you wonder why.</p>
+<p><a href="http://www.b-list.org/weblog/2008/dec/05/python-3000/" target="_blank" rel="external">James Bennett: Let’s talk about Python 3.0</a><br><a href="http://www.comp.leeds.ac.uk/nde/papers/teachpy3.html" target="_blank" rel="external">Nick Efford: On Teaching Programming With Python 3.0</a><br><a href="https://wiki.python.org/moin/Python2orPython3" target="_blank" rel="external">Python 2 or Python 3</a><br><a href="http://www.diveinto.org/python3/porting-code-to-python-3-with-2to3.html" target="_blank" rel="external">Porting Code to Python 3 with 2to3</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/to-python-3.jpg" alt="pixiv #41028787"></p>
+<p>It’s almost 5 years since Python 3 was launched. Quite a lot of popular ]]>
+    </summary>
+    
+      <category term="python" scheme="http://initrc.github.io/tags/python/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+</feed>
