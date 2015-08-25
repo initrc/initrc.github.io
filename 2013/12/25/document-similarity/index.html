@@ -11,7 +11,8 @@
 <meta property="og:url" content="http://initrc.github.io/2013/12/25/document-similarity/index.html">
 <meta property="og:site_name" content="initrc">
 <meta property="og:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
-<meta property="og:image" content="/images/document-similarity.jpg">
+<meta property="og:image" content="http://initrc.github.io/images/document-similarity.jpg">
+<meta property="og:updated_time" content="2015-03-07T23:11:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Document Similarity">
 <meta name="twitter:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
@@ -72,12 +73,12 @@ ga('send', 'pageview');
               
                 <li class="main-nav-list-item" ><a class="main-nav-list-link" href="/">Home</a></li>
               
-                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/code/">Code</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/painting/">Painting</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/piano/">Piano</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/travel/">Travel</a></li></ul>
+                    <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/code/">Code</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/game/">Game</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/painting/">Painting</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/piano/">Piano</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/travel/">Travel</a></li></ul>
                   
             </ul>
             <nav id="sub-nav">
               <div id="search-form-wrap">
-                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="q" value="site:http://initrc.github.io"></form>
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="hidden" name="sitesearch" value="http://initrc.github.io"></form>
               </div>
             </nav>
           </div>
@@ -129,19 +130,19 @@ ga('send', 'pageview');
 <li>Build a hashset for each doc that stores the words for fast lookup.</li>
 <li>Build a binary vector for each doc with the index info in the hashmap as the vector index, and 1 as the value if the word is in the hashset, 0 otherwise.</li>
 </ol>
-<p>Let v1 and v2 be the two vectors, the similarity will be:<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1 <span class="keyword">*</span> v2 / (norm(v1) <span class="keyword">*</span> norm(v2))</span><br></pre></td></tr></table></figure></p>
-<h2 id="Example:">Example:</h2><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="setting">doc1 = <span class="value"><span class="string">"Columbia University is in the City of New York."</span></span></span></span><br><span class="line"><span class="setting">doc2 = <span class="value"><span class="string">"Columbia University was founded in 1754."</span></span></span></span><br></pre></td></tr></table></figure>
-<p>After preprocessing:<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">doc<span class="number">1</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'city'</span>, <span class="string">'york'</span>]</span><br><span class="line">doc<span class="number">2</span> = [<span class="string">'columbia'</span>, <span class="string">'university'</span>, <span class="string">'found'</span>]</span><br><span class="line"></span><br><span class="line">map = &#123;<span class="string">'columbia'</span>:<span class="number">0</span>, <span class="string">'university'</span>:<span class="number">1</span>, <span class="string">'city'</span>:<span class="number">2</span>, <span class="string">'york'</span>:<span class="number">3</span>, <span class="string">'found'</span>:<span class="number">4</span>&#125;</span><br><span class="line">v<span class="number">1</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">v<span class="number">2</span> = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">similarity = <span class="number">2</span> / <span class="comment">(2 * 1.732)</span> = <span class="number">57.74</span><span class="preprocessor">%</span></span><br></pre></td></tr></table></figure></p>
+<p>Let v1 and v2 be the two vectors, the similarity will be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1 * v2 / (norm(v1) * norm(v2))</span><br></pre></td></tr></table></figure></p>
+<h2 id="Example:">Example:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = &#34;Columbia University is in the City of New York.&#34;&#10;doc2 = &#34;Columbia University was founded in 1754.&#34;</span><br></pre></td></tr></table></figure>
+<p>After preprocessing:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = [&#39;columbia&#39;, &#39;university&#39;, &#39;city&#39;, &#39;york&#39;]&#10;doc2 = [&#39;columbia&#39;, &#39;university&#39;, &#39;found&#39;]&#10;&#10;map = &#123;&#39;columbia&#39;:0, &#39;university&#39;:1, &#39;city&#39;:2, &#39;york&#39;:3, &#39;found&#39;:4&#125;&#10;v1 = [1, 1, 1, 1, 0]&#10;v2 = [1, 1, 0, 0, 1]&#10;similarity = 2 / (2 * 1.732) = 57.74%</span><br></pre></td></tr></table></figure></p>
 <h2 id="Implementation">Implementation</h2><p>Since Python is not good at numerical operations, I let <a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> take care of vector dot product, normalization, and zero filling.<br>The hashmap and hashset are Python dict and set.</p>
-<h1 id="Simjs"><a href="https://github.com/initrc/simjs" target="_blank" rel="external">Simjs</a></h1><h2 id="Framework">Framework</h2><p>I built simjs on <a href="http://expressjs.com/" target="_blank" rel="external">express</a>. I love how simple and minimal it is, but it really needs better documentation.<br>For example, I have an Ajax call and need to grab the request data at the server side. In django, it would be:<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = request<span class="class">.POST</span><span class="class">.get</span>(<span class="string">'doc1'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>In express, it would be:<br><figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = req.<span class="keyword">body</span>.doc1;</span><br></pre></td></tr></table></figure></p>
-<p>But I have no idea that it needs a middleware for such a common function.<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">app</span>.<span class="keyword">use</span>(express.bodyParser());</span><br></pre></td></tr></table></figure></p>
+<h1 id="Simjs"><a href="https://github.com/initrc/simjs" target="_blank" rel="external">Simjs</a></h1><h2 id="Framework">Framework</h2><p>I built simjs on <a href="http://expressjs.com/" target="_blank" rel="external">express</a>. I love how simple and minimal it is, but it really needs better documentation.<br>For example, I have an Ajax call and need to grab the request data at the server side. In django, it would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = request.POST.get(&#39;doc1&#39;)</span><br></pre></td></tr></table></figure></p>
+<p>In express, it would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = req.body.doc1;</span><br></pre></td></tr></table></figure></p>
+<p>But I have no idea that it needs a middleware for such a common function.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.bodyParser());</span><br></pre></td></tr></table></figure></p>
 <p>The <a href="http://expressjs.com/guide.html" target="_blank" rel="external">guide</a> page did have <code>bodyParser</code> in a code snippet, but there’s no description at all.</p>
 <h2 id="Template_Engine">Template Engine</h2><p><a href="http://twitter.github.io/hogan.js/" target="_blank" rel="external">Hogan</a> is a compiler for the logic-less <a href="http://mustache.github.io/" target="_blank" rel="external">Mustache</a> templating language. The <a href="http://jsperf.com/mustache-hogan-handlebars-underscore-ejs-jqueryejs-pure/13" target="_blank" rel="external">benchmark</a> looks great.</p>
 <p>I didn’t get a chance to use it though since there’s not much UI.</p>
 <h2 id="Implementation-1">Implementation</h2><p>The algorithm is the same, but JavaScript lacks library support. There’s no equivalent of numpy, and <code>{}</code> is not really a <del>good</del> hashmap or hashset.</p>
 <p>Surprisingly, utilities like I/O, file path, regular expression and string parsing are pretty good.</p>
-<p>Regular expression actually looks better than Python.<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// js</span></span><br><span class="line">doc.match(<span class="regexp">/[a-zA-Z-']+/g</span>)</span><br><span class="line"><span class="comment">// python</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.<span class="keyword">compile</span>(<span class="string">"[a-z\-']+"</span>, re.I).<span class="keyword">findall</span>(doc)</span><br></pre></td></tr></table></figure></p>
+<p>Regular expression actually looks better than Python.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// js&#10;doc.match(/[a-zA-Z-&#39;]+/g)&#10;// python&#10;import re&#10;re.compile(&#34;[a-z\-&#39;]+&#34;, re.I).findall(doc)</span><br></pre></td></tr></table></figure></p>
 <h1 id="Benchmark">Benchmark</h1><p>Here’s the result of comparing <a href="http://www.gutenberg.org/ebooks/2265" target="_blank" rel="external">Hamlet</a> (180KB) and <a href="http://www.gutenberg.org/ebooks/2267" target="_blank" rel="external">Othello</a> (168KB).</p>
 <table>
 <thead>
@@ -174,7 +175,7 @@ ga('send', 'pageview');
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://initrc.github.io/2013/12/25/document-similarity/" data-id="cic4c58nh0030ykvvvyq7trej" class="article-share-link">Share</a>
+        <a data-url="http://initrc.github.io/2013/12/25/document-similarity/" data-id="cidrkhr3j00352yvvneqxjsuv" class="article-share-link">Share</a>
         
           <a href="http://initrc.github.io/2013/12/25/document-similarity/#comments" class="article-comment-link">Comments</a>
         
@@ -244,6 +245,23 @@ ga('send', 'pageview');
         
           <li>
             <div class="item-thumbnail">
+              <a href="/2015/08/22/persona-4-golden/" class="thumbnail">
+  
+    <span style="background-image:url(/images/persona-4-golden.jpg
+)" alt="Persona 4 Golden" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/game/">Game</a></p>
+              <p class="item-title"><a href="/2015/08/22/persona-4-golden/" class="title">Persona 4 Golden</a></p>
+              <p class="item-date"><time datetime="2015-08-23T05:33:16.000Z" itemprop="datePublished">2015.8.22</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
               <a href="/2015/07/10/see-you-again/" class="thumbnail">
   
     <span style="background-image:url(/images/north-pole.jpg
@@ -310,23 +328,6 @@ ga('send', 'pageview');
             </div>
           </li>
         
-          <li>
-            <div class="item-thumbnail">
-              <a href="/2015/03/29/the-place-where-wishes-come-true/" class="thumbnail">
-  
-    <span style="background-image:url(/images/the-place-where-wishes-come-true.jpg
-)" alt="The Place Where Wishes Come True" class="thumbnail-image"></span>
-  
-
-</a>
-            </div>
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/piano/">Piano</a></p>
-              <p class="item-title"><a href="/2015/03/29/the-place-where-wishes-come-true/" class="title">The Place Where Wishes Come True</a></p>
-              <p class="item-date"><time datetime="2015-03-30T02:38:26.000Z" itemprop="datePublished">2015.3.29</time></p>
-            </div>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -336,7 +337,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/code/">Code</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/painting/">Painting</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/piano/">Piano</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">Travel</a><span class="category-list-count">9</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/code/">Code</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/game/">Game</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/painting/">Painting</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/piano/">Piano</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">Travel</a><span class="category-list-count">9</span></li></ul>
     </div>
   </div>
 
@@ -346,7 +347,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-float">
     <h3 class="widget-title">tag cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/django/" style="font-size: 10px;">django</a><a href="/tags/git/" style="font-size: 10px;">git</a><a href="/tags/hexo/" style="font-size: 16px;">hexo</a><a href="/tags/hiking/" style="font-size: 16px;">hiking</a><a href="/tags/iterm2/" style="font-size: 10px;">iterm2</a><a href="/tags/js/" style="font-size: 10px;">js</a><a href="/tags/keyboard/" style="font-size: 10px;">keyboard</a><a href="/tags/node/" style="font-size: 10px;">node</a><a href="/tags/painting/" style="font-size: 10px;">painting</a><a href="/tags/photo/" style="font-size: 20px;">photo</a><a href="/tags/piano/" style="font-size: 18px;">piano</a><a href="/tags/pinterest/" style="font-size: 10px;">pinterest</a><a href="/tags/plugin/" style="font-size: 14px;">plugin</a><a href="/tags/python/" style="font-size: 12px;">python</a><a href="/tags/theme/" style="font-size: 16px;">theme</a><a href="/tags/tmux/" style="font-size: 12px;">tmux</a><a href="/tags/travel/" style="font-size: 20px;">travel</a><a href="/tags/vim/" style="font-size: 18px;">vim</a><a href="/tags/zsh/" style="font-size: 10px;">zsh</a>
+      <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 16px;">hexo</a> <a href="/tags/hiking/" style="font-size: 16px;">hiking</a> <a href="/tags/iterm2/" style="font-size: 10px;">iterm2</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/keyboard/" style="font-size: 10px;">keyboard</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/painting/" style="font-size: 10px;">painting</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/piano/" style="font-size: 18px;">piano</a> <a href="/tags/pinterest/" style="font-size: 10px;">pinterest</a> <a href="/tags/plugin/" style="font-size: 14px;">plugin</a> <a href="/tags/psv/" style="font-size: 10px;">psv</a> <a href="/tags/python/" style="font-size: 12px;">python</a> <a href="/tags/theme/" style="font-size: 16px;">theme</a> <a href="/tags/tmux/" style="font-size: 12px;">tmux</a> <a href="/tags/travel/" style="font-size: 20px;">travel</a> <a href="/tags/vim/" style="font-size: 18px;">vim</a> <a href="/tags/zsh/" style="font-size: 10px;">zsh</a>
     </div>
   </div>
 
@@ -356,7 +357,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
