@@ -3,19 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Document Similarity | initrc</title>
+  <title>Tag: shell | initrc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Document Similarity">
-<meta property="og:url" content="http://initrc.github.io/2013/12/25/document-similarity/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="initrc">
+<meta property="og:url" content="http://initrc.github.io/tags/shell/index.html">
 <meta property="og:site_name" content="initrc">
-<meta property="og:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
-<meta property="og:image" content="http://initrc.github.io/images/document-similarity.jpg">
-<meta property="og:updated_time" content="2015-03-07T23:11:18.000Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Document Similarity">
-<meta name="twitter:description" content="Back in 2011, I created a web app with django to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to r">
+<meta name="twitter:title" content="initrc">
+<meta name="twitter:description">
 <meta property="fb:app_id" content="473126212800719">
   
   
@@ -93,105 +91,43 @@ ga('send', 'pageview');
           <section id="main">
             <div class="main-body-header">
 
-              <h1 class="header"><a class="page-title-link" href="/categories/code/">Code</a></h1>
+              <h1 class="header"><i class="icon" id="icon-tag"></i>tag : <em>shell</em></h1>
             </div>
             <div class="main-body-content">
               
-  <article id="post-document-similarity" class="article article-single article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-      <!--  -->
-      
-        <header class="article-header">
-          
+      <div class="article-row">
+    
+        
+  <article class="article article-summary">
+    <div class="article-summary-inner">
+      <a href="/2015/08/25/curl-grep-and-notify/" class="thumbnail">
   
-    <h1 class="article-title" itemprop="name">
-      Document Similarity
-    </h1>
+    <span style="background-image:url(/images/sen-no-kiseki-ii.jpg
+)" alt="Curl, Grep and Notify" class="thumbnail-image"></span>
   
 
-        </header>
-      
-      <p class="article-byline">
-        <a href="/2013/12/25/document-similarity/" class="article-date">
-  <time datetime="2013-12-25T20:42:54.000Z" itemprop="datePublished">2013.12.25</time>
 </a>
-      </p>
-      <div class="article-entry" itemprop="articleBody">
-        <p><img src="/images/document-similarity.jpg" alt="pixiv #28834242"></p>
-<p>Back in 2011, I created a web app with <a href="https://www.djangoproject.com/" target="_blank" rel="external">django</a> to calculate document similarity as a course project. Since the algorithm is interesting and I’d like to see if I got any better at Python, I decided to rewrite the algorithm. To minimize the project size, I got rid of all the bells and whistles of CSS and HTML5 and focused on the algorithm. To add more fun, I also tried <a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a> to see how JavaScript handles scientific calculation.</p>
-<h1 id="Simpy"><a href="https://github.com/initrc/simpy" target="_blank" rel="external">Simpy</a></h1><p>The goal is to calculate the similarity of two English docs.</p>
-<h2 id="Preprocessing">Preprocessing</h2><h3 id="English_words">English words</h3><p>Regular expression <code>[a-zA-Z-&#39;]+</code></p>
-<h3 id="Lowercase">Lowercase</h3><p>‘Correctness’ =&gt; ‘correctness’</p>
-<h3 id="Stopwords">Stopwords</h3><p>Filter out the stopwords. E.g., ‘a’, ‘the’, etc.</p>
-<h3 id="Stemming">Stemming</h3><p>‘correctness’ =&gt; ‘correct’<br>‘cats’ =&gt; ‘cat’<br>‘meeting’ =&gt; ‘meet’</p>
-<p>I applied the <a href="http://tartarus.org/martin/PorterStemmer/" target="_blank" rel="external">Porter Stemming algorithm</a>.</p>
-<h2 id="Binary_Vector">Binary Vector</h2><ol>
-<li>Build a hashmap that maps each word to an index.</li>
-<li>Build a hashset for each doc that stores the words for fast lookup.</li>
-<li>Build a binary vector for each doc with the index info in the hashmap as the vector index, and 1 as the value if the word is in the hashset, 0 otherwise.</li>
-</ol>
-<p>Let v1 and v2 be the two vectors, the similarity will be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v1 * v2 / (norm(v1) * norm(v2))</span><br></pre></td></tr></table></figure></p>
-<h2 id="Example:">Example:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = &#34;Columbia University is in the City of New York.&#34;&#10;doc2 = &#34;Columbia University was founded in 1754.&#34;</span><br></pre></td></tr></table></figure>
-<p>After preprocessing:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = [&#39;columbia&#39;, &#39;university&#39;, &#39;city&#39;, &#39;york&#39;]&#10;doc2 = [&#39;columbia&#39;, &#39;university&#39;, &#39;found&#39;]&#10;&#10;map = &#123;&#39;columbia&#39;:0, &#39;university&#39;:1, &#39;city&#39;:2, &#39;york&#39;:3, &#39;found&#39;:4&#125;&#10;v1 = [1, 1, 1, 1, 0]&#10;v2 = [1, 1, 0, 0, 1]&#10;similarity = 2 / (2 * 1.732) = 57.74%</span><br></pre></td></tr></table></figure></p>
-<h2 id="Implementation">Implementation</h2><p>Since Python is not good at numerical operations, I let <a href="http://www.numpy.org/" target="_blank" rel="external">numpy</a> take care of vector dot product, normalization, and zero filling.<br>The hashmap and hashset are Python dict and set.</p>
-<h1 id="Simjs"><a href="https://github.com/initrc/simjs" target="_blank" rel="external">Simjs</a></h1><h2 id="Framework">Framework</h2><p>I built simjs on <a href="http://expressjs.com/" target="_blank" rel="external">express</a>. I love how simple and minimal it is, but it really needs better documentation.<br>For example, I have an Ajax call and need to grab the request data at the server side. In django, it would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = request.POST.get(&#39;doc1&#39;)</span><br></pre></td></tr></table></figure></p>
-<p>In express, it would be:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">doc1 = req.body.doc1;</span><br></pre></td></tr></table></figure></p>
-<p>But I have no idea that it needs a middleware for such a common function.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(express.bodyParser());</span><br></pre></td></tr></table></figure></p>
-<p>The <a href="http://expressjs.com/guide.html" target="_blank" rel="external">guide</a> page did have <code>bodyParser</code> in a code snippet, but there’s no description at all.</p>
-<h2 id="Template_Engine">Template Engine</h2><p><a href="http://twitter.github.io/hogan.js/" target="_blank" rel="external">Hogan</a> is a compiler for the logic-less <a href="http://mustache.github.io/" target="_blank" rel="external">Mustache</a> templating language. The <a href="http://jsperf.com/mustache-hogan-handlebars-underscore-ejs-jqueryejs-pure/13" target="_blank" rel="external">benchmark</a> looks great.</p>
-<p>I didn’t get a chance to use it though since there’s not much UI.</p>
-<h2 id="Implementation-1">Implementation</h2><p>The algorithm is the same, but JavaScript lacks library support. There’s no equivalent of numpy, and <code>{}</code> is not really a <del>good</del> hashmap or hashset.</p>
-<p>Surprisingly, utilities like I/O, file path, regular expression and string parsing are pretty good.</p>
-<p>Regular expression actually looks better than Python.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// js&#10;doc.match(/[a-zA-Z-&#39;]+/g)&#10;// python&#10;import re&#10;re.compile(&#34;[a-z\-&#39;]+&#34;, re.I).findall(doc)</span><br></pre></td></tr></table></figure></p>
-<h1 id="Benchmark">Benchmark</h1><p>Here’s the result of comparing <a href="http://www.gutenberg.org/ebooks/2265" target="_blank" rel="external">Hamlet</a> (180KB) and <a href="http://www.gutenberg.org/ebooks/2267" target="_blank" rel="external">Othello</a> (168KB).</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center"><code>Implementation</code></th>
-<th style="text-align:center"><code>Time</code></th>
-<th style="text-align:center"><code>Lines of code</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">JavaScript</td>
-<td style="text-align:center">4.74s</td>
-<td style="text-align:center">86</td>
-</tr>
-<tr>
-<td style="text-align:center">Python 2.7.5</td>
-<td style="text-align:center">0.80s</td>
-<td style="text-align:center">59</td>
-</tr>
-<tr>
-<td style="text-align:center">Python 3.3.2</td>
-<td style="text-align:center">0.94s</td>
-<td style="text-align:center">58</td>
-</tr>
-</tbody>
-</table>
-<p>The Python implementation is about 5-6 times faster than JavaScript, and 30% less code.</p>
-<p>Not sure why Python 3 is slower than 2. Set operations on Python 3 should be faster. I guess the difference is on numpy.</p>
-
+      <div class="article-meta">
+        <p class="category"><a class="article-category-link" href="/categories/code/">Code</a></p>
+        <p class="date"><time datetime="2015-08-25T15:40:12.000Z" itemprop="datePublished">2015.8.25</time></p>
       </div>
-      <footer class="article-footer">
-        <a data-url="http://initrc.github.io/2013/12/25/document-similarity/" data-id="cidtw0cv30035ohvvtf8ip3su" class="article-share-link">Share</a>
+      <h2 class="article-title">
+        <a href="/2015/08/25/curl-grep-and-notify/" class="title">Curl, Grep and Notify</a>
+      </h2>
+      <p class="article-excerpt">
         
-          <a href="http://initrc.github.io/2013/12/25/document-similarity/#comments" class="article-comment-link">Comments</a>
         
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/django/">django</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
-
-      </footer>
+There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird. Anyway, so I wrot
+      </p>
     </div>
   </article>
-  
-    <section id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    
       </div>
-    </section>
+    
   
+  
+
 
             </div>
           </section>
@@ -211,29 +147,6 @@ ga('send', 'pageview');
       
     </ul>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2014/04/06/runner-020/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <p class="article-nav-title">
-        
-          Runner 0.2.0
-        
-      </p>
-      <i class="icon" id="icon-chevron-right"></i>
-    </a>
-  
-  
-    <a href="/2013/11/27/to-python-3/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">older</strong>
-      <p class="article-nav-title">To Python 3</p>
-      <i class="icon" id="icon-chevron-left"></i>
-    </a>
-  
-</nav>
-
   
   <div class="widgets-container">
     
@@ -387,13 +300,11 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'initrc';
   
-  var disqus_url = 'http://initrc.github.io/2013/12/25/document-similarity/';
-  
   (function(){
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
 </script>
