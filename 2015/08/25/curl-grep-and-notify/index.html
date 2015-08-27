@@ -5,17 +5,17 @@
   
   <title>Curl, Grep and Notify | initrc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird. Anyway, so I wrote">
+  <meta name="description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. So I wrote a script to check the price on d7vg, which syncs with PSN twice a day. BTW the trans">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Curl, Grep and Notify">
 <meta property="og:url" content="http://initrc.github.io/2015/08/25/curl-grep-and-notify/index.html">
 <meta property="og:site_name" content="initrc">
-<meta property="og:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird. Anyway, so I wrote">
+<meta property="og:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. So I wrote a script to check the price on d7vg, which syncs with PSN twice a day. BTW the trans">
 <meta property="og:image" content="http://initrc.github.io/images/sen-no-kiseki-ii.jpg">
-<meta property="og:updated_time" content="2015-08-27T07:25:40.000Z">
+<meta property="og:updated_time" content="2015-08-27T07:27:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Curl, Grep and Notify">
-<meta name="twitter:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird. Anyway, so I wrote">
+<meta name="twitter:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. So I wrote a script to check the price on d7vg, which syncs with PSN twice a day. BTW the trans">
 <meta property="fb:app_id" content="473126212800719">
   
   
@@ -118,14 +118,14 @@ ga('send', 'pageview');
       </p>
       <div class="article-entry" itemprop="articleBody">
         <p><img src="/images/sen-no-kiseki-ii.jpg" alt="Trails of Cold Steel II"></p>
-<p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Legend_of_Heroes:_Trails_of_Cold_Steel#Trails_of_Cold_Steel_II" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel II</a> on PSN HK but I missed it. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird. Anyway, so I wrote a script to check the price on <a href="http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND" target="_blank" rel="external">d7vg</a>, which syncs with PSN twice a day.</p>
+<p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Legend_of_Heroes:_Trails_of_Cold_Steel#Trails_of_Cold_Steel_II" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel II</a> on PSN HK but I missed it. So I wrote a script to check the price on <a href="http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND" target="_blank" rel="external">d7vg</a>, which syncs with PSN twice a day. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> curl-<span class="function"><span class="title">grep</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep</span></span><br><span class="line">    curl <span class="variable">$1</span> -L -silent | grep <span class="variable">$2</span> | sed <span class="string">'s/&lt;[^&gt;]*&gt;//g'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> curl-grep-<span class="function"><span class="title">notify</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep, $3 notification title</span></span><br><span class="line">    osascript <span class="operator">-e</span> <span class="string">"display notification \"<span class="variable">$(crawl $1 $2)</span>\" with title \"<span class="variable">$3</span>\""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>curl -L</code> automatically connects to the link if it’s redirected. The <code>sed</code> part removes all the html tags.</p>
 <p>An example would be<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl-grep-notify <span class="string">"http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND"</span> <span class="string">"零售价"</span> <span class="string">"闪之轨迹II"</span></span><br></pre></td></tr></table></figure></p>
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://initrc.github.io/2015/08/25/curl-grep-and-notify/" data-id="cidtw0cv7003eohvv3drnrhiw" class="article-share-link">Share</a>
+        <a data-url="http://initrc.github.io/2015/08/25/curl-grep-and-notify/" data-id="cidtw6jzc003eq6vv59gs8ya0" class="article-share-link">Share</a>
         
           <a href="http://initrc.github.io/2015/08/25/curl-grep-and-notify/#comments" class="article-comment-link">Comments</a>
         
