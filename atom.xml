@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-08-27T07:34:05.000Z</updated>
+  <updated>2015-09-14T09:35:57.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Rainy Mount Rainier]]></title>
+    <link href="http://initrc.github.io/2015/08/31/rainy-mount-rainier/"/>
+    <id>http://initrc.github.io/2015/08/31/rainy-mount-rainier/</id>
+    <published>2015-09-01T05:11:11.000Z</published>
+    <updated>2015-09-14T09:35:57.000Z</updated>
+    <content type="html"><![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a few things that I wouldn’t do alone. Driving, shopping, cooking, eating, playing cards, music and games in the car, lots of photos and selfies. Best team ever :)</p>
+<p>The weather was terrible. It was raining heavily on Saturday when we were hiking at Paradise. I still can’t believe we completed the Skyline trail.</p>
+<p><a href="https://500px.com/photo/121223031/rainy-paradise-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223031/m%3D900/25b4b7a97d6e2081c207ec9a8f54e438" alt="Rainy Paradise"></a></p>
+<p>Sunday was better, not raining, but cloudy and cold. We hiked on two trails again at Sunrise. Although the weather really challenged my photo editing, it’s the first time my photo was in the Popular feed on 500px!</p>
+<p><a href="https://500px.com/photo/121223037/trees-at-sunrise-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223037/m%3D900/0018aedef2f8ad4a6eef97d11140323e" alt="Trees at Sunrise"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a]]>
+    </summary>
+    
+      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Curl, Grep and Notify]]></title>
@@ -485,32 +511,6 @@
       <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
     
       <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Runner 0.2.0]]></title>
-    <link href="http://initrc.github.io/2014/04/06/runner-020/"/>
-    <id>http://initrc.github.io/2014/04/06/runner-020/</id>
-    <published>2014-04-06T22:46:39.000Z</published>
-    <updated>2015-03-07T22:57:13.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/runner.jpg" alt="pixiv #43395018"></p>
-<p>Added JavaScript support and autosave for <a href="https://github.com/initrc/runner" target="_blank" rel="external">Runner</a>.</p>
-<h1 id="Changelog_0-2-0">Changelog 0.2.0</h1><ol>
-<li>Add support for JavaScript that runs on Node.js</li>
-<li><code>&lt;leader&gt;r</code> saves the code before running it</li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/runner.jpg" alt="pixiv #43395018"></p>
-<p>Added JavaScript support and autosave for <a href="https://github.com/initrc/]]>
-    </summary>
-    
-      <category term="plugin" scheme="http://initrc.github.io/tags/plugin/"/>
-    
-      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
-    
-      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
     
   </entry>
   
