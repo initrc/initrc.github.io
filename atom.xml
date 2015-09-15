@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-09-14T09:35:57.000Z</updated>
+  <updated>2015-09-15T07:45:35.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -16,16 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Champion]]></title>
+    <link href="http://initrc.github.io/2015/08/31/Champion/"/>
+    <id>http://initrc.github.io/2015/08/31/Champion/</id>
+    <published>2015-09-01T06:36:57.000Z</published>
+    <updated>2015-09-15T07:45:35.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=51086983" target="_blank" rel="external"><img src="/images/golden-town.jpg" alt="pixiv #51086983"></a></p>
+<p>Slept for 5 hours, flew back from Seattle in the morning, worked for a full day, and drank red bull for the first time - that’s what I did before our indoor soccer playoffs. Crazy.</p>
+<p>The playoffs is basically semi-final and final back to back. The semi-final is tough. We were once 1-4 behind and finally won 10-8. Then there’s the final. We had a 5-minute break, whereas the other team had an hour. The scores were really close all the time and finally we won by 8-6! I scored at the final too :)</p>
+<p>This is the 3rd season I played. I played most games in the 1st season but not the playoffs due to a project. We lost at the final. The 2nd season was very unlucky that we didn’t have enough girls (3 guys + 2 girls) so we forfeited the semi-final. Finally we won the championship this time. Super proud of the team!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=51086983" target="_blank" rel="external"><img src="/images/gold]]>
+    </summary>
+    
+      <category term="soccer" scheme="http://initrc.github.io/tags/soccer/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Rainy Mount Rainier]]></title>
     <link href="http://initrc.github.io/2015/08/31/rainy-mount-rainier/"/>
     <id>http://initrc.github.io/2015/08/31/rainy-mount-rainier/</id>
     <published>2015-09-01T05:11:11.000Z</published>
-    <updated>2015-09-14T09:35:57.000Z</updated>
+    <updated>2015-09-15T07:55:51.000Z</updated>
     <content type="html"><![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a few things that I wouldn’t do alone. Driving, shopping, cooking, eating, playing cards, music and games in the car, lots of photos and selfies. Best team ever :)</p>
 <p>The weather was terrible. It was raining heavily on Saturday when we were hiking at Paradise. I still can’t believe we completed the Skyline trail.</p>
-<p><a href="https://500px.com/photo/121223031/rainy-paradise-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223031/m%3D900/25b4b7a97d6e2081c207ec9a8f54e438" alt="Rainy Paradise"></a></p>
+
+<div class="pixels-photo">
+<p><img src="https://drscdn.500px.org/photo/121223031/m%3D900/25b4b7a97d6e2081c207ec9a8f54e438" alt="Photograph Rainy Paradise by David Shi on 500px"></p>
+<a href="https://500px.com/photo/121223031/rainy-paradise-by-david-shi" target="_blank" rel="external">Rainy Paradise by David Shi on 500px</a>
+</div>
+<script type="text/javascript" src="https://500px.com/embed.js"></script>
+
 <p>Sunday was better, not raining, but cloudy and cold. We hiked on two trails again at Sunrise. Although the weather really challenged my photo editing, it’s the first time my photo was in the Popular feed on 500px!</p>
-<p><a href="https://500px.com/photo/121223037/trees-at-sunrise-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223037/m%3D900/0018aedef2f8ad4a6eef97d11140323e" alt="Trees at Sunrise"></a></p>
+
+<div class="pixels-photo">
+<p><img src="https://drscdn.500px.org/photo/121223037/m%3D900/0018aedef2f8ad4a6eef97d11140323e" alt="Photograph Trees at Sunrise by David Shi on 500px"></p>
+<a href="https://500px.com/photo/121223037/trees-at-sunrise-by-david-shi" target="_blank" rel="external">Trees at Sunrise by David Shi on 500px</a>
+</div>
+<script type="text/javascript" src="https://500px.com/embed.js"></script>
+
 ]]></content>
     <summary type="html">
     <![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a]]>
@@ -255,8 +288,8 @@
   
   <entry>
     <title><![CDATA[Porcelain]]></title>
-    <link href="http://initrc.github.io/2015/03/22/porcelain-piano-cover/"/>
-    <id>http://initrc.github.io/2015/03/22/porcelain-piano-cover/</id>
+    <link href="http://initrc.github.io/2015/03/22/porcelain/"/>
+    <id>http://initrc.github.io/2015/03/22/porcelain/</id>
     <published>2015-03-23T06:06:30.000Z</published>
     <updated>2015-03-30T03:00:40.000Z</updated>
     <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197234899&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
@@ -489,28 +522,6 @@
       <category term="pinterest" scheme="http://initrc.github.io/tags/pinterest/"/>
     
       <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Back Home]]></title>
-    <link href="http://initrc.github.io/2014/06/06/back-home/"/>
-    <id>http://initrc.github.io/2014/06/06/back-home/</id>
-    <published>2014-06-07T06:21:28.000Z</published>
-    <updated>2015-03-06T07:12:56.000Z</updated>
-    <content type="html"><![CDATA[<p>The interview season is over, and I’m finally back home! It takes so long!</p>
-<p><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/74052217/cee03648500ef83932b0bf72a9fa68b24679c82b/2048.jpg" alt="浦西 Puxi, Shanghai"><br><img src="https://gp1.wac.edgecastcdn.net/806614/photos/photos.500px.net/74052253/b30d2183acd03f8d04d7f0bda330f9e1e32b4ae2/2048.jpg" alt="浦东 Pudong, Shanghai"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>The interview season is over, and I’m finally back home! It takes so long!</p>
-<p><img src="https://gp1.wac.edgecastcdn.net/806614/photos]]>
-    </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
     
   </entry>
   
