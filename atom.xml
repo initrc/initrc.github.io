@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-09-15T16:49:11.000Z</updated>
+  <updated>2015-09-15T07:45:35.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,30 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Crater Lake]]></title>
-    <link href="http://initrc.github.io/2015/09/07/crater-lake/"/>
-    <id>http://initrc.github.io/2015/09/07/crater-lake/</id>
-    <published>2015-09-08T04:52:23.000Z</published>
-    <updated>2015-09-15T16:49:11.000Z</updated>
-    <content type="html"><![CDATA[<p>After the Mount Rainier trip, we went to Crater Lake for the long weekend. Since it’s in the middle of nowhere, we traveled by train. Had a lot of fun on the train except the sleeping part.</p>
-<p>It snowed the night before we arrived so it was quite cold. But it was sunny during the weekends. We took the boat to Wizard Island and had some great hikes. Crater Lake is super blue because it’s the deepest lake in US, 9th deepest in the world. It’s also very clean since the water comes from rain and snow.</p>
-<p><a href="https://500px.com/photo/121830933/which-is-more-blue-by-david-shi" target="_blank" rel="external"><img src="https://farm1.staticflickr.com/682/21390271282_36f17931a4_h.jpg" alt="Which is more blue?"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>After the Mount Rainier trip, we went to Crater Lake for the long weekend. Since it’s in the middle of nowhere, we traveled by train. Had]]>
-    </summary>
-    
-      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Champion]]></title>
@@ -515,6 +491,25 @@
       <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
     
       <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello Pinterest]]></title>
+    <link href="http://initrc.github.io/2014/07/28/hello-pinterest/"/>
+    <id>http://initrc.github.io/2014/07/28/hello-pinterest/</id>
+    <published>2014-07-29T06:37:11.000Z</published>
+    <updated>2015-03-06T08:12:51.000Z</updated>
+    <content type="html"><![CDATA[<p>Very pinteresty office! More on my <a href="http://www.pinterest.com/initrc/pinterest/" target="_blank" rel="external">Pinterest board</a>.</p>
+<p><img src="/images/pinterest-balloons.jpg" alt="Pinterest Balloons"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Very pinteresty office! More on my <a href="http://www.pinterest.com/initrc/pinterest/" target="_blank" rel="external">Pinterest board</a]]>
+    </summary>
+    
+      <category term="pinterest" scheme="http://initrc.github.io/tags/pinterest/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
     
   </entry>
   
