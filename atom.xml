@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-09-22T04:27:13.000Z</updated>
+  <updated>2015-12-13T12:33:33.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Guilin]]></title>
+    <link href="http://initrc.github.io/2015/10/12/guilin/"/>
+    <id>http://initrc.github.io/2015/10/12/guilin/</id>
+    <published>2015-10-13T06:02:48.000Z</published>
+    <updated>2015-12-13T12:33:33.000Z</updated>
+    <content type="html"><![CDATA[<p>Guilin (桂林) is different from anywhere else I’ve been to. Its water is not super blue and its mountains are not tall at all, but with everything combined, it’s just beautiful. Folks on 500px seem to agree with me that these photos broke my pulse record.</p>
+<p><a href="https://500px.com/photo/131560091/li-river-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/131560091/m%3D900/b107da67b37f3ce3dff46a53770af1cd" alt="Li River"></a></p>
+<p><a href="https://500px.com/photo/132151593/bamboo-rafting-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/132151593/m%3D900/e413be8503248df729a5162961af281d" alt="Bamboo Rafting"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Guilin (桂林) is different from anywhere else I’ve been to. Its water is not super blue and its mountains are not tall at all, but with eve]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[DualShock 3 on PC]]></title>
@@ -482,39 +504,6 @@
     </summary>
     
       <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
-    
-      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
-    
-      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Caps Lock, Ctrl, and Esc]]></title>
-    <link href="http://initrc.github.io/2014/09/20/caps-lock-ctrl-and-esc/"/>
-    <id>http://initrc.github.io/2014/09/20/caps-lock-ctrl-and-esc/</id>
-    <published>2014-09-21T06:27:29.000Z</published>
-    <updated>2015-03-08T00:00:34.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/caps-lock-ctrl-and-esc.jpg" alt="pixiv #47004916"></p>
-<p>I brought my mechanical keyboard to work and all I have at home is an Apple wireless keyboard. It pleases my eyes, but not my fingers, especially when I hit <code>ctrl</code> a lot in tmux. I remapped <code>fn</code> to <code>ctrl</code> but my pinkie still hates the flat keys.</p>
-<p>One <a href="http://c2.com/cgi/wiki?RemapCapsLock" target="_blank" rel="external">idea</a> I read quite a while ago was to use <code>caps lock</code>:<br>Remap <code>caps lock</code> to <code>ctrl</code>, but when it’s pressed as a single key, remap it to <code>esc</code>.<br>This makes the <code>ctrl+a</code> prefix in tmux and <code>esc</code> in vim a lot easier to hit.</p>
-<p>It’s pretty easy to configure if you’re on mac.</p>
-<ol>
-<li>System Preferences -&gt; Keyboard -&gt; Modifier Keys -&gt; Caps Lock Key: No Action</li>
-<li>Install <a href="https://pqrs.org/osx/karabiner/seil.html" target="_blank" rel="external">Seil</a> and remap <code>caps lock</code> to keycode 59</li>
-<li>Install <a href="https://pqrs.org/osx/karabiner/" target="_blank" rel="external">Karabiner</a> and select <code>Control_L to Control_L (+ When you type Control_L only, send Escape)</code></li>
-</ol>
-<p>Karabiner overrides mac’s key repeat settings. The default is too slow so I changed <code>Delay Until Repeat</code> to 200ms and <code>Key Repeat</code> to 30ms.</p>
-<p>P.S.: Seil was called PCKeyboardHack, and Karabiner was called KeyRemap4MacBook.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/caps-lock-ctrl-and-esc.jpg" alt="pixiv #47004916"></p>
-<p>I brought my mechanical keyboard to work and all I have at ho]]>
-    </summary>
-    
-      <category term="keyboard" scheme="http://initrc.github.io/tags/keyboard/"/>
-    
-      <category term="tmux" scheme="http://initrc.github.io/tags/tmux/"/>
     
       <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
     
