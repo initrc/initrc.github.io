@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-12-13T12:35:08.000Z</updated>
+  <updated>2015-12-14T01:08:02.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Hong Kong]]></title>
+    <link href="http://initrc.github.io/2015/10/19/hong-kong/"/>
+    <id>http://initrc.github.io/2015/10/19/hong-kong/</id>
+    <published>2015-10-20T06:51:48.000Z</published>
+    <updated>2015-12-14T01:08:02.000Z</updated>
+    <content type="html"><![CDATA[<p>The thing that Hong Kong impressed me most is its subway system. The scheduling is so awesome that there’s almost no waiting time between line transfers.</p>
+<p><a href="https://500px.com/photo/132240781/hong-kong-skyline-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/132240781/m%3D900/456f5f3726609484bcd3e5461bcdd292" alt="Hong Kong Skyline"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>The thing that Hong Kong impressed me most is its subway system. The scheduling is so awesome that there’s almost no waiting time between]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Guilin]]></title>
@@ -481,31 +502,6 @@
       <category term="hexo" scheme="http://initrc.github.io/tags/hexo/"/>
     
       <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
-    
-      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Spring Color Scheme]]></title>
-    <link href="http://initrc.github.io/2014/09/21/spring-color-scheme/"/>
-    <id>http://initrc.github.io/2014/09/21/spring-color-scheme/</id>
-    <published>2014-09-22T02:24:42.000Z</published>
-    <updated>2015-05-17T23:38:48.000Z</updated>
-    <content type="html"><![CDATA[<p>My old vim color scheme was based on <a href="http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484" target="_blank" rel="external">Mustang</a>. I liked the colors a lot and tweaked the already good-looking green and purple and have used it for years. Like many other vim color schemes, the source code is not very well structured. Today I came across <a href="https://github.com/ChrisKempson/Tomorrow-Theme" target="_blank" rel="external">Tomorrow Theme</a> when I was tweaking my <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> theme. The code is so organized that I literally only have to define seven colors at the top.</p>
-<p>So here’s my first vim color scheme, <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a>.</p>
-<p>It’s actually not easy to pick all seven rainbow colors. The first three are easy. I inherited <code>grass green</code> and <code>Athena purple</code>, and picked <code>crayola yellow</code>, which has the perfect brightness and saturation. Red and orange are hard. I want them to pop out but not too bright, and there should be enough difference between them, but not too much to feel too many colors on the screen. It took so long and I finally picked <code>pink salmon</code> and <code>atomic tangerine</code>. The same criteria for aqua and blue. The <code>Columbia blue</code> on Wikipedia is too dim so I saturated it a bit, and picked <code>medium aquamarine</code> for aqua.</p>
-<figure class="highlight vim"><figcaption><span>vim/colors/spring.vim</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">s:foreground</span> = <span class="string">"c5c8c6"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:background</span> = <span class="string">"1d1f21"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:selection</span> = <span class="string">"373b41"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:line</span> = <span class="string">"282a2e"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:comment</span> = <span class="string">"969896"</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">s:red</span> = <span class="string">"ff91a4"</span> <span class="string">" pink salmon</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:orange</span> = <span class="string">"ff9966"</span> <span class="string">" atomic tangerine</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:yellow</span> = <span class="string">"fce883"</span> <span class="string">" crayola</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:green</span> = <span class="string">"b1d631"</span> <span class="string">" grass</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:aqua</span> = <span class="string">"66cdaa"</span> <span class="string">" medium aquamarine</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:blue</span> = <span class="string">"86c3e6"</span> <span class="string">" light columbia</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:purple</span> = <span class="string">"7e8aa2"</span> <span class="string">" athena</span><br><span class="line"></span><span class="keyword">let</span> <span class="variable">s:window</span> = <span class="string">"4d5057"</span></span><br></pre></td></tr></table></figure>
-<p>Here’s a screenshot of how js and python code look in <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a>.</p>
-<p><img src="https://raw.githubusercontent.com/initrc/spring/master/screenshot.png" alt="Spring Color Scheme"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>My old vim color scheme was based on <a href="http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484" target="_blank" rel="ex]]>
-    </summary>
-    
-      <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
-    
-      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
     
       <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
     
