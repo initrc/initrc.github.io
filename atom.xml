@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-12-14T01:08:02.000Z</updated>
+  <updated>2015-12-31T11:27:03.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[红颜旧]]></title>
+    <link href="http://initrc.github.io/2015/12/26/%E7%BA%A2%E9%A2%9C%E6%97%A7/"/>
+    <id>http://initrc.github.io/2015/12/26/红颜旧/</id>
+    <published>2015-12-26T23:17:22.000Z</published>
+    <updated>2015-12-31T11:27:03.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239227180&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>This song is from the super hot drama <a href="https://en.wikipedia.org/wiki/Nirvana_In_Fire" target="_blank" rel="external">琅琊榜 (Nirvana in Fire)</a>, and it marks the 6th and final piano cover in 2015. Hope I have more time for piano next year.</p>
+<p><img src="/images/琅琊榜.jpg" alt=""></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hong Kong]]></title>
@@ -474,37 +495,6 @@
       <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
     
       <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Theme Single]]></title>
-    <link href="http://initrc.github.io/2014/09/21/theme-single/"/>
-    <id>http://initrc.github.io/2014/09/21/theme-single/</id>
-    <published>2014-09-22T05:57:20.000Z</published>
-    <updated>2015-03-06T09:28:13.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/theme-single.jpg" alt="pixiv #48127313"></p>
-<p><a href="https://github.com/initrc/hexo-theme-single" target="_blank" rel="external">Single</a> is a single-column <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> theme based on <a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a>.</p>
-<p>After all the crazy schedules, I’m finally back to my blog and starting to back fill posts. After upgrading Hexo to 2.8, my old theme <a href="https://github.com/initrc/hexo-theme-candy" target="_blank" rel="external">Candy</a> no longer works. So here’s the new one.</p>
-<h1 id="Changelog_0-1-0">Changelog 0.1.0</h1><ol>
-<li>Change the link color to coral green <code>#4bc4af</code></li>
-<li>Remove the banner and menus to simplify the header</li>
-<li>Add Pinterest, Twitter and Github icons to the header</li>
-<li>Only show the tag cloud in the sidebar and move it to the bottom</li>
-<li>Use <a href="https://github.com/initrc/spring" target="_blank" rel="external">Spring</a> color scheme for syntax highlighting</li>
-<li>Tweak caption font styles</li>
-</ol>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/theme-single.jpg" alt="pixiv #48127313"></p>
-<p><a href="https://github.com/initrc/hexo-theme-single" target="_blank" r]]>
-    </summary>
-    
-      <category term="hexo" scheme="http://initrc.github.io/tags/hexo/"/>
-    
-      <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
-    
-      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
     
   </entry>
   
