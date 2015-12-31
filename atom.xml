@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-12-31T11:27:03.000Z</updated>
+  <updated>2015-12-31T12:18:44.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -16,11 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Simple Music Web App]]></title>
+    <link href="http://initrc.github.io/2015/12/31/simple-music-web-app/"/>
+    <id>http://initrc.github.io/2015/12/31/simple-music-web-app/</id>
+    <published>2015-12-31T11:45:05.000Z</published>
+    <updated>2015-12-31T12:18:44.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=53045520" target="_blank" rel="external"><img src="/images/your-lies-in-april-53045520.jpg" alt="pixiv #53045520"></a></p>
+<p>Wrote a simple <a href="http://initrc.github.io/music/">music web app</a> to share music with those who can’t access SoundCloud. It’s built on AngularJS 1.4.8. <a href="https://github.com/initrc/music/tree/gh-pages" target="_blank" rel="external">Code</a> here.</p>
+<p>Three goals:</p>
+<ol>
+<li>Better audio quality than audio host websites</li>
+<li>Easy to add new songs</li>
+<li>Play in the background on mobile</li>
+</ol>
+<p>Goal #1 and #2 are easy. It’s simply a one-liner to add a new song. Goal #3 is hard on Wechat. A workaround is to open the shared link in the browser.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=53045520" target="_blank" rel="external"><img src="/images/your]]>
+    </summary>
+    
+      <category term="angular" scheme="http://initrc.github.io/tags/angular/"/>
+    
+      <category term="js" scheme="http://initrc.github.io/tags/js/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[红颜旧]]></title>
     <link href="http://initrc.github.io/2015/12/26/%E7%BA%A2%E9%A2%9C%E6%97%A7/"/>
     <id>http://initrc.github.io/2015/12/26/红颜旧/</id>
     <published>2015-12-26T23:17:22.000Z</published>
-    <updated>2015-12-31T11:27:03.000Z</updated>
+    <updated>2015-12-31T11:47:07.000Z</updated>
     <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/239227180&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 
 <p>This song is from the super hot drama <a href="https://en.wikipedia.org/wiki/Nirvana_In_Fire" target="_blank" rel="external">琅琊榜 (Nirvana in Fire)</a>, and it marks the 6th and final piano cover in 2015. Hope I have more time for piano next year.</p>
@@ -474,27 +502,6 @@
       <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
     
       <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Sadness and Sorrow]]></title>
-    <link href="http://initrc.github.io/2014/11/15/sadness-and-sorrow/"/>
-    <id>http://initrc.github.io/2014/11/15/sadness-and-sorrow/</id>
-    <published>2014-11-16T02:57:02.000Z</published>
-    <updated>2015-03-30T03:00:49.000Z</updated>
-    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177155182&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-<p>Sadness and Sorrow from Naruto OST. My very first piano cover.</p>
-<p><img src="/images/sadness-and-sorrow.jpg" alt="pixiv #41984327"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
-    </summary>
-    
-      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
-    
-      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
     
   </entry>
   
