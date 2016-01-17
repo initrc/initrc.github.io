@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2015-12-31T12:38:34.000Z</updated>
+  <updated>2016-01-17T09:29:07.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -16,13 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Simple Music Web App]]></title>
-    <link href="http://initrc.github.io/2015/12/29/simple-music-web-app/"/>
-    <id>http://initrc.github.io/2015/12/29/simple-music-web-app/</id>
+    <title><![CDATA[Hello Atom]]></title>
+    <link href="http://initrc.github.io/2016/01/16/hello-atom/"/>
+    <id>http://initrc.github.io/2016/01/16/hello-atom/</id>
+    <published>2016-01-17T07:58:17.000Z</published>
+    <updated>2016-01-17T09:29:07.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=37162743" target="_blank" rel="external"><img src="/images/bus-route-37162743.jpg" alt="pixiv #37162743"></a></p>
+<p>Android Studio/IntelliJ have been freezing every few minutes on me, so I decided to move away from it and code Android in Vim just like how I did in my last job. A few things didn’t go well so I tried <a href="https://atom.io/" target="_blank" rel="external">Atom</a>. It’s not the perfect solution but after a few days of tweaking I’m happy coding in Atom.</p>
+<p>I feel the cover picture fits here really well :)</p>
+<h1 id="Why_not_Vim">Why not Vim</h1><ol>
+<li><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="external">NERDTree</a> is great, but you can’t change the font just for that plugin. The monospace font takes a lot of space and it’s not be efficient enough for large projects.</li>
+<li><a href="https://github.com/kien/ctrlp.vim" target="_blank" rel="external">Ctrlp</a> sometimes can’t find the file in large projects.</li>
+<li><a href="https://github.com/rking/ag.vim" target="_blank" rel="external">Ag</a> always surprises where it will be after I open a file in a vertical pane. Sometimes NERDTree can be in the middle of two panes.</li>
+<li><a href="https://github.com/scrooloose/syntastic" target="_blank" rel="external">Syntastic</a> works fine on dynamic languages. I use checkstyle as the java linter, but hope for something better.</li>
+</ol>
+<h1 id="Why_Atom">Why Atom</h1><p>I picked Atom over Vim mostly because of its Modern UI. It solves the inefficient space problem in Vim due to the universal font. The Vim mode is not bad, although I can’t just throw my vimrc to it like IntelliJ.</p>
+<h2 id="Plugins">Plugins</h2><p>Here’s a list of plugins I’m using.</p>
+<ol>
+<li><a href="https://atom.io/packages/vim-mode" target="_blank" rel="external">vim-mode</a> is not bad. I noticed the waiting time for a shortcut of two keys is longer than expected. E.g., I can’t use <code>jk</code> to escape because of the long delay. Also there’s no <code>ZZ</code>.</li>
+<li><a href="https://atom.io/packages/ex-mode" target="_blank" rel="external">ex-mode</a> so you can do commands after <code>:</code>, such as <code>:w</code>.</li>
+<li><a href="https://atom.io/packages/terminal-plus" target="_blank" rel="external">terminal-plus</a> works great. After the powerline font and theme colors are set up, it just works and looks like my zsh. I removed one line of code to hide the status bar icon because I mostly just need one terminal and it doesn’t have to take up an entire row above the status bar. The red x button on the right is also annoying.</li>
+<li><a href="https://atom.io/packages/git-plus" target="_blank" rel="external">git-plus</a> is pretty good. No <code>git blame</code> feature though.</li>
+<li><a href="https://atom.io/packages/blame" target="_blank" rel="external">blame</a> is the best git blame plugin I can find. It’s not as powerful as <a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="external">vim-fugitive</a> which can look at the entire history. But at least this plugin allows you to copy the hash.</li>
+<li><a href="https://atom.io/packages/linter" target="_blank" rel="external">linter</a> and <a href="https://atom.io/packages/linter-javac" target="_blank" rel="external">linter-javac</a>. Now I actually just want checkstyle instead. Javac is slow. I had to restrict it to a single file to hide false alarms on some Android and 3rd party imports.</li>
+<li><a href="https://atom.io/packages/nuclide-move-pane" target="_blank" rel="external">nuclide-move-pane</a> to move tabs to another pane. Atom’s default behavior is weird.</li>
+<li><a href="https://atom.io/packages/dash" target="_blank" rel="external">dash</a> is awesome. I had to add Android to the config manually though.</li>
+</ol>
+<h2 id="Theme_and_Syntax">Theme and Syntax</h2><p>I like the One Dark theme and syntax. I forked the syntax and here’s my own <a href="https://atom.io/packages/spring-dark-syntax" target="_blank" rel="external">spring-dark-syntax</a>. The colors are from my Vim theme.</p>
+<p><img src="https://raw.githubusercontent.com/initrc/spring-dark-syntax/master/screenshot.png" alt="spring-dark-syntax"></p>
+<h2 id="What’s_short_in_Atom">What’s short in Atom</h2><p>Apparently I still miss the accurate jump-to-definition and find-usages from IntelliJ, but Atom looks really cool and has better Vim integration on tab and pane navigation.</p>
+<p>I wrote a few scripts to fill some of the domain specific gaps. E.g., take a screenshot on android and pull it; Gradle build the Android project, send a notification when it’s done and push the apk to the device, etc. In that way I open the terminal panel, type one or two keys to trigger the command, close it and continue coding until notified.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=37162743" target="_blank" rel="external"><img src="/images/bus-]]>
+    </summary>
+    
+      <category term="atom" scheme="http://initrc.github.io/tags/atom/"/>
+    
+      <category term="theme" scheme="http://initrc.github.io/tags/theme/"/>
+    
+      <category term="vim" scheme="http://initrc.github.io/tags/vim/"/>
+    
+      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Piano Playlist]]></title>
+    <link href="http://initrc.github.io/2015/12/29/piano-playlist/"/>
+    <id>http://initrc.github.io/2015/12/29/piano-playlist/</id>
     <published>2015-12-29T11:45:05.000Z</published>
-    <updated>2015-12-31T12:38:34.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=53045520" target="_blank" rel="external"><img src="/images/your-lies-in-april-53045520.jpg" alt="pixiv #53045520"></a></p>
-<p>Wrote a simple <a href="http://initrc.github.io/music/">music web app</a> to share music with those who can’t access SoundCloud. It’s built on AngularJS 1.4.8. <a href="https://github.com/initrc/music/tree/gh-pages" target="_blank" rel="external">Code</a> here.</p>
+    <updated>2016-01-17T09:20:22.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=52929014" target="_blank" rel="external"><img src="/images/above-the-lights-52929014.jpg" alt="pixiv #52929014"></a></p>
+<p>Wrote a simple <a href="http://initrc.github.io/music/">piano playlist</a> to share with those who can’t access SoundCloud. It’s built on AngularJS 1.4.8. <a href="https://github.com/initrc/music/tree/gh-pages" target="_blank" rel="external">Code</a> here.</p>
 <p>Three goals:</p>
 <ol>
 <li>Better audio quality than audio host websites</li>
@@ -32,7 +78,7 @@
 <p>Goal #1 and #2 are easy. It’s simply a one-liner to add a new song. Goal #3 is hard on Wechat. A workaround is to open the shared link in the browser.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=53045520" target="_blank" rel="external"><img src="/images/your]]>
+    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=52929014" target="_blank" rel="external"><img src="/images/abov]]>
     </summary>
     
       <category term="angular" scheme="http://initrc.github.io/tags/angular/"/>
@@ -481,27 +527,6 @@
       <category term="painting" scheme="http://initrc.github.io/tags/painting/"/>
     
       <category term="Painting" scheme="http://initrc.github.io/categories/painting/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Aloha Hawaii]]></title>
-    <link href="http://initrc.github.io/2014/12/27/aloha-hawaii/"/>
-    <id>http://initrc.github.io/2014/12/27/aloha-hawaii/</id>
-    <published>2014-12-28T02:28:16.000Z</published>
-    <updated>2015-09-15T08:11:36.000Z</updated>
-    <content type="html"><![CDATA[<p>This year’s holiday trip is Hawaii! I had some awesome Japanese food, rode a horse called Mercury, drove an ATV, and learned that my name in Hawaiian is Kawika, w pronounced as v. More photos on <a href="https://www.flickr.com/photos/davidsnooker/sets/72157649907986026/" target="_blank" rel="external">Flickr</a>.</p>
-<p><img src="https://farm9.staticflickr.com/8587/15938464908_335a6f8999_k_d.jpg" alt="Kualoa Ranch landscape"><br><img src="https://farm8.staticflickr.com/7582/15938634560_d1bf67d2c7_k_d.jpg" alt="Moss and black sand"><br><img src="https://farm8.staticflickr.com/7513/15503564364_7b63477a04_k_d.jpg" alt="Makapu&#39;u Point"><br><img src="https://farm8.staticflickr.com/7583/16124011331_c0d0a13e70_k_d.jpg" alt="Waikiki Beach sunset"><br><img src="https://farm9.staticflickr.com/8566/16123991091_673609b077_k_d.jpg" alt="Paitan chashu ramen from Yotteko-Ya"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>This year’s holiday trip is Hawaii! I had some awesome Japanese food, rode a horse called Mercury, drove an ATV, and learned that my name]]>
-    </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
     
   </entry>
   
