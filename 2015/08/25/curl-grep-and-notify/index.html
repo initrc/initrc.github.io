@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="initrc">
 <meta property="og:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. So I wrote a script to check the price on d7vg, which syncs with PSN twice a day. BTW the trans">
 <meta property="og:image" content="http://initrc.github.io/images/sen-no-kiseki-ii.jpg">
-<meta property="og:updated_time" content="2015-08-27T07:34:05.000Z">
+<meta property="og:updated_time" content="2016-03-13T23:14:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Curl, Grep and Notify">
 <meta name="twitter:description" content="There was a 50% off discount on The Legend of Heroes: Trails of Cold Steel II on PSN HK but I missed it. So I wrote a script to check the price on d7vg, which syncs with PSN twice a day. BTW the trans">
@@ -117,7 +117,7 @@ ga('send', 'pageview');
 </a>
       </p>
       <div class="article-entry" itemprop="articleBody">
-        <p><img src="/images/sen-no-kiseki-ii.jpg" alt="Trails of Cold Steel II"></p>
+        <p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
 <p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Legend_of_Heroes:_Trails_of_Cold_Steel#Trails_of_Cold_Steel_II" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel II</a> on PSN HK but I missed it. So I wrote a script to check the price on <a href="http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND" target="_blank" rel="external">d7vg</a>, which syncs with PSN twice a day. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> curl-<span class="function"><span class="title">grep</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep</span></span><br><span class="line">    curl <span class="variable">$1</span> -L -silent | grep <span class="variable">$2</span> | sed <span class="string">'s/&lt;[^&gt;]*&gt;//g'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> curl-grep-<span class="function"><span class="title">notify</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep, $3 notification title</span></span><br><span class="line">    osascript <span class="operator">-e</span> <span class="string">"display notification \"<span class="variable">$(curl-grep $1 $2)</span>\" with title \"<span class="variable">$3</span>\""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>curl -L</code> automatically connects to the link if it’s redirected. The <code>sed</code> part removes all the html tags.</p>
@@ -125,7 +125,7 @@ ga('send', 'pageview');
 
       </div>
       <footer class="article-footer">
-        <a data-url="http://initrc.github.io/2015/08/25/curl-grep-and-notify/" data-id="cijickz6k004enevvngq6vswy" class="article-share-link">Share</a>
+        <a data-url="http://initrc.github.io/2015/08/25/curl-grep-and-notify/" data-id="cilr4139y004g64vv4k84su1n" class="article-share-link">Share</a>
         
           <a href="http://initrc.github.io/2015/08/25/curl-grep-and-notify/#comments" class="article-comment-link">Comments</a>
         
@@ -195,6 +195,40 @@ ga('send', 'pageview');
         
           <li>
             <div class="item-thumbnail">
+              <a href="/2016/03/08/一番の宝物/" class="thumbnail">
+  
+    <span style="background-image:url(/images/angel-beats-11670173.jpg
+)" alt="一番の宝物" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/piano/">Piano</a></p>
+              <p class="item-title"><a href="/2016/03/08/一番の宝物/" class="title">一番の宝物</a></p>
+              <p class="item-date"><time datetime="2016-03-09T07:55:13.000Z" itemprop="datePublished">2016.3.8</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
+              <a href="/2016/02/15/闪之轨迹/" class="thumbnail">
+  
+    <span style="background-image:url(/images/sen-no-kiseki.jpg
+)" alt="闪之轨迹" class="thumbnail-image"></span>
+  
+
+</a>
+            </div>
+            <div class="item-inner">
+              <p class="item-category"><a class="article-category-link" href="/categories/game/">Game</a></p>
+              <p class="item-title"><a href="/2016/02/15/闪之轨迹/" class="title">闪之轨迹</a></p>
+              <p class="item-date"><time datetime="2016-02-15T23:04:50.000Z" itemprop="datePublished">2016.2.15</time></p>
+            </div>
+          </li>
+        
+          <li>
+            <div class="item-thumbnail">
               <a href="/2016/01/16/hello-atom/" class="thumbnail">
   
     <span style="background-image:url(/images/bus-route-37162743.jpg
@@ -244,40 +278,6 @@ ga('send', 'pageview');
             </div>
           </li>
         
-          <li>
-            <div class="item-thumbnail">
-              <a href="/2015/10/19/hong-kong/" class="thumbnail">
-  
-    <span style="background-image:url(https://drscdn.500px.org/photo/132240781/m%3D900/456f5f3726609484bcd3e5461bcdd292
-)" alt="Hong Kong" class="thumbnail-image"></span>
-  
-
-</a>
-            </div>
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/travel/">Travel</a></p>
-              <p class="item-title"><a href="/2015/10/19/hong-kong/" class="title">Hong Kong</a></p>
-              <p class="item-date"><time datetime="2015-10-20T06:51:48.000Z" itemprop="datePublished">2015.10.19</time></p>
-            </div>
-          </li>
-        
-          <li>
-            <div class="item-thumbnail">
-              <a href="/2015/10/12/guilin/" class="thumbnail">
-  
-    <span style="background-image:url(https://drscdn.500px.org/photo/131560091/m%3D900/b107da67b37f3ce3dff46a53770af1cd
-)" alt="Guilin" class="thumbnail-image"></span>
-  
-
-</a>
-            </div>
-            <div class="item-inner">
-              <p class="item-category"><a class="article-category-link" href="/categories/travel/">Travel</a></p>
-              <p class="item-title"><a href="/2015/10/12/guilin/" class="title">Guilin</a></p>
-              <p class="item-date"><time datetime="2015-10-13T06:02:48.000Z" itemprop="datePublished">2015.10.12</time></p>
-            </div>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -287,7 +287,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/code/">Code</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/game/">Game</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/painting/">Painting</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/piano/">Piano</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">Travel</a><span class="category-list-count">13</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/code/">Code</a><span class="category-list-count">18</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/game/">Game</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/painting/">Painting</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/piano/">Piano</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/travel/">Travel</a><span class="category-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -297,7 +297,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-float">
     <h3 class="widget-title">tag cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/angular/" style="font-size: 10px;">angular</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 14.29px;">hexo</a> <a href="/tags/hiking/" style="font-size: 17.14px;">hiking</a> <a href="/tags/iterm2/" style="font-size: 10px;">iterm2</a> <a href="/tags/js/" style="font-size: 11.43px;">js</a> <a href="/tags/keyboard/" style="font-size: 10px;">keyboard</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/painting/" style="font-size: 10px;">painting</a> <a href="/tags/pc/" style="font-size: 10px;">pc</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/piano/" style="font-size: 18.57px;">piano</a> <a href="/tags/pinterest/" style="font-size: 10px;">pinterest</a> <a href="/tags/playstation/" style="font-size: 11.43px;">playstation</a> <a href="/tags/plugin/" style="font-size: 12.86px;">plugin</a> <a href="/tags/psv/" style="font-size: 10px;">psv</a> <a href="/tags/python/" style="font-size: 11.43px;">python</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/soccer/" style="font-size: 10px;">soccer</a> <a href="/tags/theme/" style="font-size: 15.71px;">theme</a> <a href="/tags/tmux/" style="font-size: 11.43px;">tmux</a> <a href="/tags/travel/" style="font-size: 20px;">travel</a> <a href="/tags/vim/" style="font-size: 18.57px;">vim</a> <a href="/tags/zsh/" style="font-size: 10px;">zsh</a>
+      <a href="/tags/angular/" style="font-size: 10px;">angular</a> <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bluetooth/" style="font-size: 10px;">bluetooth</a> <a href="/tags/django/" style="font-size: 10px;">django</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 13.75px;">hexo</a> <a href="/tags/hiking/" style="font-size: 16.25px;">hiking</a> <a href="/tags/iterm2/" style="font-size: 10px;">iterm2</a> <a href="/tags/js/" style="font-size: 11.25px;">js</a> <a href="/tags/keyboard/" style="font-size: 10px;">keyboard</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/painting/" style="font-size: 10px;">painting</a> <a href="/tags/pc/" style="font-size: 10px;">pc</a> <a href="/tags/photo/" style="font-size: 20px;">photo</a> <a href="/tags/piano/" style="font-size: 18.75px;">piano</a> <a href="/tags/pinterest/" style="font-size: 10px;">pinterest</a> <a href="/tags/playstation/" style="font-size: 10px;">playstation</a> <a href="/tags/plugin/" style="font-size: 12.5px;">plugin</a> <a href="/tags/psv/" style="font-size: 11.25px;">psv</a> <a href="/tags/python/" style="font-size: 11.25px;">python</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/soccer/" style="font-size: 10px;">soccer</a> <a href="/tags/theme/" style="font-size: 15px;">theme</a> <a href="/tags/tmux/" style="font-size: 11.25px;">tmux</a> <a href="/tags/travel/" style="font-size: 20px;">travel</a> <a href="/tags/vim/" style="font-size: 17.5px;">vim</a> <a href="/tags/zsh/" style="font-size: 10px;">zsh</a>
     </div>
   </div>
 
@@ -307,7 +307,7 @@ ga('send', 'pageview');
   <div class="widget-wrap widget-list">
     <h3 class="widget-title">archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">April 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/12/">December 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/09/">September 2014</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">April 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12/">December 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/11/">November 2013</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/10/">October 2013</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/08/">August 2013</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/05/">May 2013</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 

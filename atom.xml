@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2016-01-17T09:35:21.000Z</updated>
+  <updated>2016-03-14T00:28:08.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,62 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[一番の宝物]]></title>
+    <link href="http://initrc.github.io/2016/03/08/%E4%B8%80%E7%95%AA%E3%81%AE%E5%AE%9D%E7%89%A9/"/>
+    <id>http://initrc.github.io/2016/03/08/一番の宝物/</id>
+    <published>2016-03-09T07:55:13.000Z</published>
+    <updated>2016-03-14T00:28:08.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250801921&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>This version of 一番の宝物 (Ichiban no Takaramono) might be short, but the song means a lot and is huge on my list. Glad I’m good enough to play it now. Made a couple changes from <a href="https://www.youtube.com/watch?v=XzUQbOYb3QI" target="_blank" rel="external">dinhosaurrx</a>‘s <a href="http://www.sheethost.com/sheet/mbqUWS" target="_blank" rel="external">transcription</a>.</p>
+<p>Here’s LiSA’s super emotional live.<br><div class="video-container"><iframe src="//www.youtube.com/embed/Gl6LlwUUWfw" frameborder="0" allowfullscreen></iframe></div></p>
+<p>My next piano cover will be the ED of Angel Beats!, <a href="https://www.youtube.com/watch?v=xtcvM3s1I1s" target="_blank" rel="external">Brave Song</a>. The OP is way too hard at the moment. It’ll take many years of pratice to play Animenz’s version of <a href="https://www.youtube.com/watch?v=eJInGGAPZgI" target="_blank" rel="external">My Soul, your Beats!</a>.</p>
+<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=11670173" target="_blank" rel="external"><img src="/images/angel-beats-11670173.jpg" alt="pixiv #11670173"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[闪之轨迹]]></title>
+    <link href="http://initrc.github.io/2016/02/15/%E9%97%AA%E4%B9%8B%E8%BD%A8%E8%BF%B9/"/>
+    <id>http://initrc.github.io/2016/02/15/闪之轨迹/</id>
+    <published>2016-02-15T23:04:50.000Z</published>
+    <updated>2016-03-13T23:23:58.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki.jpg" alt="闪之轨迹"></p>
+<p>Finally finished this amazing game yesterday. I played a lot during commute, and always saved the best scenes and battles for home on PS TV. They even ported to English, but with a weird name <a href="http://www.amazon.com/gp/product/B00Z9LUI9I/" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel</a>.</p>
+<p>Likes</p>
+<ul>
+<li>Reasonable dungeons that are not just time killers</li>
+<li>Orbments and equipments are kept when team members changed</li>
+<li>Great story and music as always</li>
+<li>Great characterization, even NPCs</li>
+</ul>
+<p>Dislikes</p>
+<ul>
+<li>Scene switching and battle loading takes too long</li>
+<li>FPS drops when the scene is busy</li>
+</ul>
+<p>Best Vita game played so far.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/sen-no-kiseki.jpg" alt="闪之轨迹"></p>
+<p>Finally finished this amazing game yesterday. I played a lot during commute, and ]]>
+    </summary>
+    
+      <category term="psv" scheme="http://initrc.github.io/tags/psv/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello Atom]]></title>
@@ -255,16 +311,16 @@
     <link href="http://initrc.github.io/2015/08/25/curl-grep-and-notify/"/>
     <id>http://initrc.github.io/2015/08/25/curl-grep-and-notify/</id>
     <published>2015-08-25T15:40:12.000Z</published>
-    <updated>2015-08-27T07:34:05.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="Trails of Cold Steel II"></p>
+    <updated>2016-03-13T23:14:56.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
 <p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Legend_of_Heroes:_Trails_of_Cold_Steel#Trails_of_Cold_Steel_II" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel II</a> on PSN HK but I missed it. So I wrote a script to check the price on <a href="http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND" target="_blank" rel="external">d7vg</a>, which syncs with PSN twice a day. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> curl-<span class="function"><span class="title">grep</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep</span></span><br><span class="line">    curl <span class="variable">$1</span> -L -silent | grep <span class="variable">$2</span> | sed <span class="string">'s/&lt;[^&gt;]*&gt;//g'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> curl-grep-<span class="function"><span class="title">notify</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep, $3 notification title</span></span><br><span class="line">    osascript <span class="operator">-e</span> <span class="string">"display notification \"<span class="variable">$(curl-grep $1 $2)</span>\" with title \"<span class="variable">$3</span>\""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>curl -L</code> automatically connects to the link if it’s redirected. The <code>sed</code> part removes all the html tags.</p>
 <p>An example would be<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl-grep-notify <span class="string">"http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND"</span> <span class="string">"零售价"</span> <span class="string">"闪之轨迹II"</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="Trails of Cold Steel II"></p>
-<p>There was a 50% off discount on <a href="https://en.wikiped]]>
+    <![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
+<p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Le]]>
     </summary>
     
       <category term="shell" scheme="http://initrc.github.io/tags/shell/"/>
@@ -278,7 +334,7 @@
     <link href="http://initrc.github.io/2015/08/22/persona-4-golden/"/>
     <id>http://initrc.github.io/2015/08/22/persona-4-golden/</id>
     <published>2015-08-23T05:33:16.000Z</published>
-    <updated>2015-09-21T00:57:19.000Z</updated>
+    <updated>2016-03-13T22:07:31.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/images/persona-4-golden.jpg" alt="Persona 4 Golden"></p>
 <p>“Persona 4 Golden”, my answer to “What games do you play?” for the past 14 months. Not anymore!</p>
 <p>Originally I bought this game and PS Vita so that I could play on a plane. Why P4G? Because when you google it, you see a 9.3/10 from IGN and 9.6/10 from the community. I watched both the P4 and P4G anime before the game and I loved the story so much that I didn’t mind going through it one more time.</p>
@@ -299,8 +355,6 @@
     <![CDATA[<p><img src="/images/persona-4-golden.jpg" alt="Persona 4 Golden"></p>
 <p>“Persona 4 Golden”, my answer to “What games do you play?” for the]]>
     </summary>
-    
-      <category term="playstation" scheme="http://initrc.github.io/tags/playstation/"/>
     
       <category term="psv" scheme="http://initrc.github.io/tags/psv/"/>
     
@@ -481,51 +535,6 @@
       <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
     
       <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Secret Base]]></title>
-    <link href="http://initrc.github.io/2015/01/25/secret-base/"/>
-    <id>http://initrc.github.io/2015/01/25/secret-base/</id>
-    <published>2015-01-25T23:30:07.000Z</published>
-    <updated>2016-01-18T05:35:05.000Z</updated>
-    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187866011&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-<p>Secret Base as Anohana ED. My first piano cover in 2015.</p>
-<p>This is the first song I tried to learn and it took so many months. When I first searched it on YouTube, I found this <a href="https://www.youtube.com/watch?v=PgzuOXKd6Sg" target="_blank" rel="external">cover</a> by <a href="https://www.youtube.com/user/TehIshter" target="_blank" rel="external">Theishter</a>. The cover was the full version but the sheet music was only 3 pages. I was able to play the short version but then I found that <a href="https://www.youtube.com/user/ThePianoL" target="_blank" rel="external">ThePianoL</a> wrote the <a href="http://sheethost.com/sheet/ZiaAQS" target="_blank" rel="external">full version</a> of the arrangment in 9 pages and <a href="https://www.youtube.com/watch?v=GkzO9BCTtsY" target="_blank" rel="external">covered</a> it. There’s a part in the full version that requires continuous big jumps from both hands and I gave up due to lack of skills and frustration. After practicing Czerny and Hanon for a while I finally came back and managed to record this.</p>
-<p>My top 3 anime ending song of all time. Using the cherry blossom I just painted this week as the cover as it sort of fits Anohana. Recording a 6-minute cover is so tiring but well worth it.</p>
-<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=18231910" target="_blank" rel="external"><img src="/images/anohana-18231910.jpg" alt="pixiv #18231910"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
-    </summary>
-    
-      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
-    
-      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Cherry Blossom Painting]]></title>
-    <link href="http://initrc.github.io/2015/01/20/cherry-blossom-painting/"/>
-    <id>http://initrc.github.io/2015/01/20/cherry-blossom-painting/</id>
-    <published>2015-01-21T06:24:23.000Z</published>
-    <updated>2015-03-30T03:01:37.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/sakura.jpg" alt="Cherry Blossom"></p>
-<p>My first painting in 2015. <a href="http://www.pixiv.net/member_illust.php?mode=manga&amp;illust_id=46754602" target="_blank" rel="external">Instructions</a> by moiy.</p>
-<p>Painted in <a href="http://www.clipstudio.net/en/" target="_blank" rel="external">Clip Studio Paint</a>. Their website has awesome tutorials.</p>
-<p>The first half was quite boring, but it was so much fun after the form and multiple color layers were established.<br>Overall the line work was the hardest. 赛璐璐画风真是勾线勾到死！</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/sakura.jpg" alt="Cherry Blossom"></p>
-<p>My first painting in 2015. <a href="http://www.pixiv.net/member_illust.php?mod]]>
-    </summary>
-    
-      <category term="painting" scheme="http://initrc.github.io/tags/painting/"/>
-    
-      <category term="Painting" scheme="http://initrc.github.io/categories/painting/"/>
     
   </entry>
   
