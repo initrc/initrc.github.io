@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2016-03-14T00:28:08.000Z</updated>
+  <updated>2016-06-18T19:48:25.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Taiwan]]></title>
+    <link href="http://initrc.github.io/2016/05/22/taiwan/"/>
+    <id>http://initrc.github.io/2016/05/22/taiwan/</id>
+    <published>2016-05-23T05:08:30.000Z</published>
+    <updated>2016-06-18T19:48:25.000Z</updated>
+    <content type="html"><![CDATA[<p>I traveled to a few cities along the west coast: Taipei, Chiayi, Kenting, Kaohsiung. The hot spring in Guanziling is quite special. Street food is great. Not impressed by the old looks of the cities though. When compared to Qingdao that I traveled to a week earlier, it’s like 10 years back.</p>
+<p><a href="https://500px.com/photo/159229167/taipei-101-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/159229167/m%3D900/fa0750659342448a1a881afc0ba5f6d4" alt="Taipei 101"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>I traveled to a few cities along the west coast: Taipei, Chiayi, Kenting, Kaohsiung. The hot spring in Guanziling is quite special. Stree]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Fighting Climax]]></title>
+    <link href="http://initrc.github.io/2016/05/15/fighting-climax/"/>
+    <id>http://initrc.github.io/2016/05/15/fighting-climax/</id>
+    <published>2016-05-16T05:07:43.000Z</published>
+    <updated>2016-06-18T07:08:28.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/fighting-climax-1.jpg" alt="Dengeki Bunko: Fighting Climax"></p>
+<p><a href="https://www.amazon.com/gp/product/B00T0I6SXQ/" target="_blank" rel="external">Fight Climax</a> is an amazing fighting game with lots of characters I like. Although it’s an easy game, some trophies are really hard to unlock. I’ve been playing it during my commute and finally got the platinum trophy during my vacation back home.</p>
+<p>Favorite challenging mode: Survival. Ranked 7th on PSN HK.<br>Most played characters: Mikoto, Asuna and Yukina.</p>
+<p><img src="/images/fighting-climax-2.jpg" alt="100% completed"><br><img src="/images/fighting-climax-3.jpg" alt="7th on PSN HK"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/fighting-climax-1.jpg" alt="Dengeki Bunko: Fighting Climax"></p>
+<p><a href="https://www.amazon.com/gp/product/B00T0I6S]]>
+    </summary>
+    
+      <category term="psv" scheme="http://initrc.github.io/tags/psv/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Qingdao]]></title>
+    <link href="http://initrc.github.io/2016/05/14/qingdao/"/>
+    <id>http://initrc.github.io/2016/05/14/qingdao/</id>
+    <published>2016-05-15T05:08:25.000Z</published>
+    <updated>2016-06-18T19:24:58.000Z</updated>
+    <content type="html"><![CDATA[<p>Qingdao is a lot more modern than I expected. It’s really a nice city with good weather, food, and city infra.</p>
+<p><a href="https://500px.com/photo/157653525/skyline-vs-old-town-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/157653525/m%3D900/b30b90d4eef11c62f06b2cc3e197a155" alt="Skyline vs old town"></a></p>
+<p><a href="https://500px.com/photo/157460559/kois-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/157460559/m%3D900/51abcaba0d77513cbdeb36640b64552b" alt="Kois at Qingdao Polar Ocean World"></a></p>
+<p><a href="https://500px.com/photo/159226217/mailboxes-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/159226217/m%3D900/b2b544804110e67a1e825e3b16e0957e" alt="Mailboxes"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Qingdao is a lot more modern than I expected. It’s really a nice city with good weather, food, and city infra.</p>
+<p><a href="https://50]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[一番の宝物]]></title>
@@ -470,71 +537,6 @@
       <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
     
       <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[The Place Where Wishes Come True]]></title>
-    <link href="http://initrc.github.io/2015/03/29/the-place-where-wishes-come-true/"/>
-    <id>http://initrc.github.io/2015/03/29/the-place-where-wishes-come-true/</id>
-    <published>2015-03-30T02:38:26.000Z</published>
-    <updated>2016-01-18T05:36:44.000Z</updated>
-    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198342597&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-<p>Three easy covers in a week. This one is from Clannad. I tweaked a bit and added an ending to the <a href="http://ichigos.com/sheets/c" target="_blank" rel="external">sheet music</a>.</p>
-<p>I also finished the <a href="https://www.coursera.org/course/musicianship" target="_blank" rel="external">Developing Your Musicianship</a> course on coursera yesterday. The course is a little verbose but overall I like it, especially the ear training part.</p>
-<p>Back to music theory and boring fundamental practices. Hopefully I’ll cover something more challenging next time.</p>
-<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=35470184" target="_blank" rel="external"><img src="/images/walking-on-the-sky-35470184.jpg" alt="pixiv #35470184"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
-    </summary>
-    
-      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
-    
-      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[回梦游仙]]></title>
-    <link href="http://initrc.github.io/2015/03/27/%E5%9B%9E%E6%A2%A6%E6%B8%B8%E4%BB%99/"/>
-    <id>http://initrc.github.io/2015/03/27/回梦游仙/</id>
-    <published>2015-03-28T05:50:04.000Z</published>
-    <updated>2015-03-30T03:00:28.000Z</updated>
-    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198067201&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-<p>Here’s a short piano cover from my favorite Chinese RPG series, <a href="http://zh.wikipedia.org/wiki/%E4%BB%99%E5%8A%8D%E5%A5%87%E4%BF%A0%E5%82%B3%E5%9B%9B" target="_blank" rel="external">仙剑奇侠传四</a>。</p>
-<p><img src="/images/回梦游仙.jpg" alt=""></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
-    </summary>
-    
-      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
-    
-      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Porcelain]]></title>
-    <link href="http://initrc.github.io/2015/03/22/porcelain/"/>
-    <id>http://initrc.github.io/2015/03/22/porcelain/</id>
-    <published>2015-03-23T06:06:30.000Z</published>
-    <updated>2016-01-18T05:30:15.000Z</updated>
-    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/197234899&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-
-<p>I started piano lessons again. My teacher has the sheet music of <a href="http://www.amazon.com/gp/product/B004I6J6BG/" target="_blank" rel="external">Porcelain</a> by Helen Jane Long. So here’s the cover.</p>
-<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=48253260" target="_blank" rel="external"><img src="/images/your-lies-in-april-48253260.jpg" alt="pixiv #48253260"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
-    </summary>
-    
-      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
-    
-      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
     
   </entry>
   
