@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2016-06-18T19:48:25.000Z</updated>
+  <updated>2016-08-07T22:01:37.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Brave Song]]></title>
+    <link href="http://initrc.github.io/2016/08/07/brave-song/"/>
+    <id>http://initrc.github.io/2016/08/07/brave-song/</id>
+    <published>2016-08-07T21:27:17.000Z</published>
+    <updated>2016-08-07T22:01:37.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/277255794&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>This year has been super busy so far. 7 months passed and this is only my 2nd cover of the year?!</p>
+<p>The ED of Angel Beats! is very emotional, both musically and visually. Here’s the <a href="http://sheet.host/sheet/9K1vfm" target="_blank" rel="external">sheet music</a> from <a href="https://www.youtube.com/watch?v=vDDaszZht14" target="_blank" rel="external">Animenz</a>.</p>
+<p>I’ll pause the covers to focus on the basics. Czerny 599 is so boring but it’s time to finish it.</p>
+<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=10822210" target="_blank" rel="external"><img src="/images/angel-beats-10822210.jpg" alt="pixiv #10822210"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Taiwan]]></title>
@@ -508,29 +531,6 @@
     <![CDATA[<p>Went hiking at Big Sur with friends this Sunday. A total of 330 miles of drive!</p>
 <p><img src="https://farm8.staticflickr.com/7613/1717]]>
     </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Fort Funston]]></title>
-    <link href="http://initrc.github.io/2015/04/04/fort-funston/"/>
-    <id>http://initrc.github.io/2015/04/04/fort-funston/</id>
-    <published>2015-04-05T00:41:32.000Z</published>
-    <updated>2015-04-05T00:57:15.000Z</updated>
-    <content type="html"><![CDATA[<p>Checked out this place after the piano lesson today for its famous hang gliding. I saw two gliders on the base, but no one was flying. It was super windy and there’s sand in the wind too. Not good for cameras so I only took a couple shots. The landscape looks just like what you’d see on a coastal trail in SF. Since I was so cold, I tweaked the image to be a little warmer.</p>
-<p><img src="https://farm8.staticflickr.com/7667/17035815275_219fa83b80_k_d.jpg" alt="Fort Funston"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Checked out this place after the piano lesson today for its famous hang gliding. I saw two gliders on the base, but no one was flying. It]]>
-    </summary>
-    
-      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
     
       <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
     
