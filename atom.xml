@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2016-08-07T22:01:37.000Z</updated>
+  <updated>2016-08-21T23:10:41.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Vegas Offsite]]></title>
+    <link href="http://initrc.github.io/2016/08/21/vegas-offsite/"/>
+    <id>http://initrc.github.io/2016/08/21/vegas-offsite/</id>
+    <published>2016-08-21T22:51:26.000Z</published>
+    <updated>2016-08-21T23:10:41.000Z</updated>
+    <content type="html"><![CDATA[<p>So we made this somewhat joke-like promise happen. Our team had an offsite at Vegas this week to celebrate an unbelievable H1.</p>
+<p>I took very few photos this trip. Here’s some light adjustment practice. The indoor light is terrible at Venetian on this otherwise nice golden globe. I’m a little surprised to see it reach Popular on 500px within 40 minutes.</p>
+<p><a href="https://500px.com/photo/168901639/golden-globe-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/168901639/m%3D900/851d1d1ac0dbf5111c00de4b4b3caba0" alt="Golden Globe"></a></p>
+<p>On day one I shot guns with friends, had a buffet at Bellagio, and watched the awesome <a href="https://www.blueman.com/" target="_blank" rel="external">Blue Man Group</a> show.</p>
+<p>At <a href="http://www.battlefieldvegas.com/collections/packages/products/black-ops-gamer-experience" target="_blank" rel="external">Battlefield Vegas</a>, I shot MP5K, UZI, COLT M4, and AK-47. AK-47 is such a beast in automatic mode. In CS the first 3 shots are accurate. In real life, only the first one is! Pretty much all holes outside of 9 are from AK-47 in automatic.</p>
+<p><img src="https://pbs.twimg.com/media/CqaVwGOUsAAzjU3.jpg:large" alt="Shooting at Vegas"></p>
+<p>I thought day two might be boring but it actually wasn’t. I watched the last 10 minutes of the Arsenal game during brunch (bad start of the day), engjoyed the hilarious <a href="http://www.mackingshow.com/" target="_blank" rel="external">Mac King</a> comedy magic show at an awesome seat, and watched Germany lose at a penalty shootout for the first time.</p>
+<p>Lesson learned: never fly with United Airlines. They found a leaking engine after everyone was onboard. The delay was 3+ hours. The other time I flew with United, the delay was 5 hours due to mechanical issues.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>So we made this somewhat joke-like promise happen. Our team had an offsite at Vegas this week to celebrate an unbelievable H1.</p>
+<p>I t]]>
+    </summary>
+    
+      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
+    
+      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
+    
+      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Brave Song]]></title>
@@ -512,31 +540,6 @@
       <category term="zsh" scheme="http://initrc.github.io/tags/zsh/"/>
     
       <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Big Sur]]></title>
-    <link href="http://initrc.github.io/2015/04/12/big-sur/"/>
-    <id>http://initrc.github.io/2015/04/12/big-sur/</id>
-    <published>2015-04-13T06:59:59.000Z</published>
-    <updated>2015-04-18T01:37:25.000Z</updated>
-    <content type="html"><![CDATA[<p>Went hiking at Big Sur with friends this Sunday. A total of 330 miles of drive!</p>
-<p><img src="https://farm8.staticflickr.com/7613/17174816191_e276d5ce18_k_d.jpg" alt="View of Highway 1"><br><img src="https://farm8.staticflickr.com/7618/16989245559_140076f959_k_d.jpg" alt="Hiking"><br><img src="https://farm9.staticflickr.com/8729/16987674128_1fd9d4eb87_k_d.jpg" alt="Mountain and ocean views"></p>
-<p>We stopped at Carmel for lunch. This <a href="http://www.yelp.com/biz/a-w-shucks-cocktail-and-oyster-bar-carmel" target="_blank" rel="external">oyster bar</a> has really good oyster and crabs. Carmel also has some very nice art galleries.</p>
-<p><img src="https://farm8.staticflickr.com/7721/17149361186_fde775b0db_k_d.jpg" alt="Oyster at Carmel"><br><img src="https://farm9.staticflickr.com/8724/17149361886_ababf26104_k_d.jpg" alt="Crab salad at Carmel"></p>
-<p>And finally we had dinner at <a href="http://www.yelp.com/biz/little-sheep-mongolian-hot-pot-cupertino-3" target="_blank" rel="external">Little Sheep</a>. It was 9:30 when we got there and their kitchen closed at 10. They were so nice to wait until we finished at 11.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Went hiking at Big Sur with friends this Sunday. A total of 330 miles of drive!</p>
-<p><img src="https://farm8.staticflickr.com/7613/1717]]>
-    </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
     
   </entry>
   
