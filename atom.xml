@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2016-11-06T22:24:05.000Z</updated>
+  <updated>2017-01-02T03:06:20.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -16,11 +16,108 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[闪之轨迹2]]></title>
+    <link href="http://initrc.github.io/2016/12/31/%E9%97%AA%E4%B9%8B%E8%BD%A8%E8%BF%B92/"/>
+    <id>http://initrc.github.io/2016/12/31/闪之轨迹2/</id>
+    <published>2017-01-01T04:46:58.000Z</published>
+    <updated>2017-01-02T03:06:20.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
+<p>Finished the game at the last day of the year. Just like the last game, I played during the commute, flight, and at home on PS TV.</p>
+<p>Likes</p>
+<ul>
+<li>Surprising ending, as always.</li>
+<li>Great music.</li>
+</ul>
+<p>Dislikes</p>
+<ul>
+<li>Never liked the collecting and fishing elements in jrpg.</li>
+<li>It’s quite easy to beat most bosses after spending some time configuring the orbments. But after the loss, the bosses always claimed they were never serious about the battle, and the main characters were immediately put in danger, and saved by someone else. It’s as if they never grow.</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
+<p>Finished the game at the last day of the year. Just like the last game, I pla]]>
+    </summary>
+    
+      <category term="psv" scheme="http://initrc.github.io/tags/psv/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Dmc: Devil May Cry]]></title>
+    <link href="http://initrc.github.io/2016/12/18/dmc-devil-may-cry/"/>
+    <id>http://initrc.github.io/2016/12/18/dmc-devil-may-cry/</id>
+    <published>2016-12-19T01:46:24.000Z</published>
+    <updated>2017-01-02T02:57:10.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/dmc.jpg" alt="DmC"></p>
+<p><a href="http://store.steampowered.com/app/220440/" target="_blank" rel="external">DmC: Devil May Cry</a> is the first Steam game I installed on my new gaming PC. The battle is super fun. Although it’s almost 4 years old, the graphics still look stunning. I’m not a hardcore action game player, and I was really happy when I got an SSS score.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/dmc.jpg" alt="DmC"></p>
+<p><a href="http://store.steampowered.com/app/220440/" target="_blank" rel="external">DmC: Devi]]>
+    </summary>
+    
+      <category term="pc" scheme="http://initrc.github.io/tags/pc/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Orange PC]]></title>
+    <link href="http://initrc.github.io/2016/12/08/orange-pc/"/>
+    <id>http://initrc.github.io/2016/12/08/orange-pc/</id>
+    <published>2016-12-08T08:05:10.000Z</published>
+    <updated>2017-01-02T03:01:43.000Z</updated>
+    <content type="html"><![CDATA[<p>I built a PC!</p>
+<ul>
+<li>To play the games I bought on Steam but never played.</li>
+<li>I played all the Vita games that I liked.</li>
+<li>There’s no PS4 only game that I liked yet, and PC has better graphics.</li>
+<li>I might try 3D modeling and build games later.</li>
+<li>Should be fun.</li>
+</ul>
+<p>It turned out that building a PC IS quite fun, and building a small form factor PC is challenging too.</p>
+<p>Here’s the <a href="https://pcpartpicker.com/list/8c4mFd" target="_blank" rel="external">part list</a>.</p>
+<ul>
+<li>CPU: i5 6500 (enough for gaming)</li>
+<li>CPU cooler: CRYORIG C7 (quiet and does the job)</li>
+<li>Motherboard: GA-B150N Phoenix-WIFI (supports sata M.2 ssd)</li>
+<li>Memory: Crucial Ballistix Sport LT 16GB (great deal and it’s red)</li>
+<li>Storage: Crucial MX300 525GB M.2-2280 (M.2 saves sata and power cables)</li>
+<li>GPU: Gigabyte GeForce GTX 1070 8GB Windforce OC (great cooling, and it comes with Watch Dogs 2)</li>
+<li>Case: Fractal Design Node 202 (the only console form factor case that looks good)</li>
+<li>Power supply: Corsair SF 450W 80+ Gold (quiet, fully modular with flat cables)</li>
+<li>Case fan: Cougar Vortex PWM 70.5 CFM 120mm Fan (x2, quiet, high static pressure, and orange)</li>
+<li>Other: Steam controller (great with steam big picture mode)</li>
+</ul>
+<p>I didn’t care about the color scheme because the case doesn’t have a window and it sits in the TV unit. But as I was ordering hardware pieces, it turned out to have an orange color scheme. The motherboard has orange LEDs, the graphics card has some orange marks, and the case fans are orange too. You can see the case fans through the mesh if the case is placed vertically. The Node 202 case comes with a PSU but the cables are ugly and it’s not modular. So I bought the one without the PSU and got the Corsair PSU. All cables are black. Its fans is larger than the Silverstone PSU so it’s quieter.</p>
+<p>Since the case is really small, it’s hard to keep it cool. Originally I was planning to get a blower style GPU so it blows the hot air out of the case, instead of relying on case fans. But all of the blower style GPUs are loud. So instead I got the Cougar high static pressure case fans. They are really amazing! The maximum GPU temperature is only 71℃ during the Unigine Valley benchmark. Thanks to the high quality fans (case fans, CPU cooler, PSU fans), the system is pretty quiet.</p>
+<p>The case has one drawback though. It comes with a GPU supporting bracket that helps holding the GPU in both horizontal and vertical placement. But after I mounted two case fans, there’s no place for the supporting bracket. I DIY’ed one with some post-it, a ribbon and a hole punch. It works fine in the horizontal placement.</p>
+<p><img src="/images/orange-pc-1.jpg" alt="Motherboard"><br><img src="/images/orange-pc-2.jpg" alt="Overall"><br><img src="/images/orange-pc-3.jpg" alt="Hack between the GPU and the case fans"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>I built a PC!</p>
+<ul>
+<li>To play the games I bought on Steam but never played.</li>
+<li>I played all the Vita games that I liked.</li>
+]]>
+    </summary>
+    
+      <category term="pc" scheme="http://initrc.github.io/tags/pc/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Gyarados Painting]]></title>
     <link href="http://initrc.github.io/2016/10/30/gyarados-painting/"/>
     <id>http://initrc.github.io/2016/10/30/gyarados-painting/</id>
     <published>2016-10-30T23:07:20.000Z</published>
-    <updated>2016-11-06T22:24:05.000Z</updated>
+    <updated>2016-11-06T22:24:21.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/images/gyarados.jpg" alt="Gyarados"></p>
 <p>I mostly painted this over the weekends and spent almost 2 months on it. My skills are improved very slowly since I only paint once a year. Hope I can practice more next year.</p>
 <p>The line work of the <a href="/2015/01/20/cherry-blossom-painting/">cherry blossom</a> painting I did last year was killing me. I learned impasto this time, although it’s quite different from the traditional impasto technique. In digital, it’s more about adding multiple layers of color and texture, rather than layering thick brush or painting-knife strokes.</p>
@@ -206,7 +303,7 @@
     <link href="http://initrc.github.io/2016/02/15/%E9%97%AA%E4%B9%8B%E8%BD%A8%E8%BF%B9/"/>
     <id>http://initrc.github.io/2016/02/15/闪之轨迹/</id>
     <published>2016-02-15T23:04:50.000Z</published>
-    <updated>2016-03-13T23:23:58.000Z</updated>
+    <updated>2017-01-02T01:56:18.000Z</updated>
     <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki.jpg" alt="闪之轨迹"></p>
 <p>Finally finished this amazing game yesterday. I played a lot during commute, and always saved the best scenes and battles for home on PS TV. They even ported to English, but with a weird name <a href="http://www.amazon.com/gp/product/B00Z9LUI9I/" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel</a>.</p>
 <p>Likes</p>
@@ -438,88 +535,6 @@
     </summary>
     
       <category term="soccer" scheme="http://initrc.github.io/tags/soccer/"/>
-    
-      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Rainy Mount Rainier]]></title>
-    <link href="http://initrc.github.io/2015/08/31/rainy-mount-rainier/"/>
-    <id>http://initrc.github.io/2015/08/31/rainy-mount-rainier/</id>
-    <published>2015-09-01T05:11:11.000Z</published>
-    <updated>2016-01-18T05:58:11.000Z</updated>
-    <content type="html"><![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a few things that I wouldn’t do alone. Driving, shopping, cooking, eating, playing cards, music and games in the car, and lots of photos. Best team ever :)</p>
-<p>The weather was terrible. It was raining heavily on Saturday when we were hiking at Paradise. I still can’t believe we completed the Skyline trail.</p>
-<p><a href="https://500px.com/photo/121223031/rainy-paradise-by-david-shi&quot;" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223031/m%3D900/25b4b7a97d6e2081c207ec9a8f54e438" alt="Rainy Paradise"></a></p>
-<p>Sunday was better, not raining, but cloudy and cold. We hiked on two trails again at Sunrise. Although the weather really challenged my photo editing, it’s the first time my photo was in the Popular feed on 500px!</p>
-<p><a href="https://500px.com/photo/121223037/trees-at-sunrise-by-david-shi&quot;" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/121223037/m%3D900/0018aedef2f8ad4a6eef97d11140323e" alt="Trees at Sunrise"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Spent the weekend at Mount Rainier with the team. Somehow I feel the experience was like P4G. Definitely had a great time and did quite a]]>
-    </summary>
-    
-      <category term="hiking" scheme="http://initrc.github.io/tags/hiking/"/>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Curl, Grep and Notify]]></title>
-    <link href="http://initrc.github.io/2015/08/25/curl-grep-and-notify/"/>
-    <id>http://initrc.github.io/2015/08/25/curl-grep-and-notify/</id>
-    <published>2015-08-25T15:40:12.000Z</published>
-    <updated>2016-03-13T23:14:56.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
-<p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Legend_of_Heroes:_Trails_of_Cold_Steel#Trails_of_Cold_Steel_II" target="_blank" rel="external">The Legend of Heroes: Trails of Cold Steel II</a> on PSN HK but I missed it. So I wrote a script to check the price on <a href="http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND" target="_blank" rel="external">d7vg</a>, which syncs with PSN twice a day. BTW the translation from “Sen no Kiseki” to “Trails of Cold Steel” is weird.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> curl-<span class="function"><span class="title">grep</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep</span></span><br><span class="line">    curl <span class="variable">$1</span> -L -silent | grep <span class="variable">$2</span> | sed <span class="string">'s/&lt;[^&gt;]*&gt;//g'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> curl-grep-<span class="function"><span class="title">notify</span></span>() &#123; <span class="comment"># $1 url, $2 text to grep, $3 notification title</span></span><br><span class="line">    osascript <span class="operator">-e</span> <span class="string">"display notification \"<span class="variable">$(curl-grep $1 $2)</span>\" with title \"<span class="variable">$3</span>\""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>curl -L</code> automatically connects to the link if it’s redirected. The <code>sed</code> part removes all the html tags.</p>
-<p>An example would be<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl-grep-notify <span class="string">"http://store.d7vg.com/hk/HP0425-PCSH00075_00-EDSENNOKISEKI2ND"</span> <span class="string">"零售价"</span> <span class="string">"闪之轨迹II"</span></span><br></pre></td></tr></table></figure></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/sen-no-kiseki-ii.jpg" alt="闪之轨迹2"></p>
-<p>There was a 50% off discount on <a href="https://en.wikipedia.org/wiki/The_Le]]>
-    </summary>
-    
-      <category term="shell" scheme="http://initrc.github.io/tags/shell/"/>
-    
-      <category term="Code" scheme="http://initrc.github.io/categories/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Persona 4 Golden]]></title>
-    <link href="http://initrc.github.io/2015/08/22/persona-4-golden/"/>
-    <id>http://initrc.github.io/2015/08/22/persona-4-golden/</id>
-    <published>2015-08-23T05:33:16.000Z</published>
-    <updated>2016-03-13T22:07:31.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="/images/persona-4-golden.jpg" alt="Persona 4 Golden"></p>
-<p>“Persona 4 Golden”, my answer to “What games do you play?” for the past 14 months. Not anymore!</p>
-<p>Originally I bought this game and PS Vita so that I could play on a plane. Why P4G? Because when you google it, you see a 9.3/10 from IGN and 9.6/10 from the community. I watched both the P4 and P4G anime before the game and I loved the story so much that I didn’t mind going through it one more time.</p>
-<p>The progress was really slow because I only played it on the plane. I tried playing it at home but it felt weird when I connected PSV to the soundbase via bluetooth, but looking down at the 5’’ screen instead of the TV in front of me. So then I bought a PS TV and P4G rendered really nice on it. That really helped speeding it up.</p>
-<p>Likes</p>
-<ul>
-<li>Awesome story</li>
-<li>Surprisingly good English voices</li>
-</ul>
-<p>Dislikes</p>
-<ul>
-<li>Not self-explanatory skill names in English (but it’s so much cheaper than the Chinese version)</li>
-<li>Boring quests like catching bugs and fishing with them as baits and feeding the cat 19 fishes</li>
-</ul>
-<p>This was the best title on PSV when it was launched, probably still is.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><img src="/images/persona-4-golden.jpg" alt="Persona 4 Golden"></p>
-<p>“Persona 4 Golden”, my answer to “What games do you play?” for the]]>
-    </summary>
-    
-      <category term="psv" scheme="http://initrc.github.io/tags/psv/"/>
     
       <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
     
