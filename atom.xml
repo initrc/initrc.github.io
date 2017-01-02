@@ -117,7 +117,7 @@
     <link href="http://initrc.github.io/2016/11/26/pendant/"/>
     <id>http://initrc.github.io/2016/11/26/pendant/</id>
     <published>2016-11-27T02:58:08.000Z</published>
-    <updated>2017-01-02T03:13:06.000Z</updated>
+    <updated>2017-01-02T03:15:05.000Z</updated>
     <content type="html"><![CDATA[<p>Tried Clip Studio Paint and bought it because</p>
 <ul>
 <li>It’s great.</li>
@@ -133,6 +133,10 @@
 <li>Can’t save in the trial version - nice trick.</li>
 <li>It]]>
     </summary>
+    
+      <category term="painting" scheme="http://initrc.github.io/tags/painting/"/>
+    
+      <category term="Painting" scheme="http://initrc.github.io/categories/painting/"/>
     
   </entry>
   
