@@ -5,7 +5,7 @@
   <subtitle><![CDATA[initrc]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://initrc.github.io//"/>
-  <updated>2017-01-02T03:06:20.000Z</updated>
+  <updated>2017-02-07T10:02:30.000Z</updated>
   <id>http://initrc.github.io//</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Watch Dogs 2]]></title>
+    <link href="http://initrc.github.io/2017/02/05/watch-dogs-2/"/>
+    <id>http://initrc.github.io/2017/02/05/watch-dogs-2/</id>
+    <published>2017-02-06T05:16:04.000Z</published>
+    <updated>2017-02-07T10:02:30.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/watch-dogs-2.jpg" alt="Watch Dogs 2"></p>
+<p>I bought GTX 1070 because it came with <a href="https://www.ubisoft.com/en-US/game/watch-dogs-2/" target="_blank" rel="external">Watch Dogs 2</a>. The trailer was very interesting and it did not disappoint. Hacker + San Francisco seems a must buy.</p>
+<p>I heard Ubisoft did a terrible job porting the game to PC. Even GTX 1070 can only run the game on 1080p @ 60fps at ultra settings. Glad I picked it over 1060.</p>
+<p>Devil May Cry, Tomb Raider, and Watch Dogs 2 are the 3 games I played so far on the new PC. I love all of them, but Watch Dogs 2 is the only game I played after I completed the story. Got all the research points and the most expensive car.</p>
+<p>Nvidia <a href="http://www.geforce.com/hardware/technology/ansel" target="_blank" rel="external">Ansel</a> finally came to Watch Dogs 2 in a recent update. 360 stereo screenshots!</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/watch-dogs-2.jpg" alt="Watch Dogs 2"></p>
+<p>I bought GTX 1070 because it came with <a href="https://www.ubisoft.com/en]]>
+    </summary>
+    
+      <category term="pc" scheme="http://initrc.github.io/tags/pc/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[小幸运]]></title>
+    <link href="http://initrc.github.io/2017/01/27/%E5%B0%8F%E5%B9%B8%E8%BF%90/"/>
+    <id>http://initrc.github.io/2017/01/27/小幸运/</id>
+    <published>2017-01-27T09:03:06.000Z</published>
+    <updated>2017-02-07T09:26:20.000Z</updated>
+    <content type="html"><![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304766701&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+<p>Finished recording 小幸运 (A little happiness) before the Chinese New Year. Now I really need to practice the basics.</p>
+<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=45800596" target="_blank" rel="external"><img src="/images/piano-45800596.jpg" alt="pixiv #45800596"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tra]]>
+    </summary>
+    
+      <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
+    
+      <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Tomb Raider]]></title>
+    <link href="http://initrc.github.io/2017/01/22/tomb-raider/"/>
+    <id>http://initrc.github.io/2017/01/22/tomb-raider/</id>
+    <published>2017-01-22T08:53:14.000Z</published>
+    <updated>2017-02-07T09:02:41.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/images/tomb-raider.jpg" alt="Tomb Raider"></p>
+<p>I bought <a href="http://steamcommunity.com/app/203160" target="_blank" rel="external">Tomb Raider</a> a long time ago but finally had a PC to play on. It’s so good that I didn’t want to finish it. Fire arrow is my favorite weapon. Although it’s a 2013 game, the graphics look great today.</p>
+<p>This game is also optimized for 3D. Too bad HDMI only supports 720p 3D @ 60 fps.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/images/tomb-raider.jpg" alt="Tomb Raider"></p>
+<p>I bought <a href="http://steamcommunity.com/app/203160" target="_blank" rel=]]>
+    </summary>
+    
+      <category term="pc" scheme="http://initrc.github.io/tags/pc/"/>
+    
+      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[闪之轨迹2]]></title>
@@ -473,75 +538,6 @@
       <category term="piano" scheme="http://initrc.github.io/tags/piano/"/>
     
       <category term="Piano" scheme="http://initrc.github.io/categories/piano/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hong Kong]]></title>
-    <link href="http://initrc.github.io/2015/10/19/hong-kong/"/>
-    <id>http://initrc.github.io/2015/10/19/hong-kong/</id>
-    <published>2015-10-20T06:51:48.000Z</published>
-    <updated>2015-12-14T01:08:02.000Z</updated>
-    <content type="html"><![CDATA[<p>The thing that Hong Kong impressed me most is its subway system. The scheduling is so awesome that there’s almost no waiting time between line transfers.</p>
-<p><a href="https://500px.com/photo/132240781/hong-kong-skyline-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/132240781/m%3D900/456f5f3726609484bcd3e5461bcdd292" alt="Hong Kong Skyline"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>The thing that Hong Kong impressed me most is its subway system. The scheduling is so awesome that there’s almost no waiting time between]]>
-    </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Guilin]]></title>
-    <link href="http://initrc.github.io/2015/10/12/guilin/"/>
-    <id>http://initrc.github.io/2015/10/12/guilin/</id>
-    <published>2015-10-13T06:02:48.000Z</published>
-    <updated>2015-12-31T05:17:12.000Z</updated>
-    <content type="html"><![CDATA[<p>There’s no other place that you can see scenes like these. Guilin is just amazing! These photos broke my record on 500px.</p>
-<p><a href="https://500px.com/photo/131560091/li-river-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/131560091/m%3D900/b107da67b37f3ce3dff46a53770af1cd" alt="Li River"></a></p>
-<p><a href="https://500px.com/photo/132151593/bamboo-rafting-by-david-shi" target="_blank" rel="external"><img src="https://drscdn.500px.org/photo/132151593/m%3D900/e413be8503248df729a5162961af281d" alt="Bamboo Rafting"></a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>There’s no other place that you can see scenes like these. Guilin is just amazing! These photos broke my record on 500px.</p>
-<p><a href=]]>
-    </summary>
-    
-      <category term="photo" scheme="http://initrc.github.io/tags/photo/"/>
-    
-      <category term="travel" scheme="http://initrc.github.io/tags/travel/"/>
-    
-      <category term="Travel" scheme="http://initrc.github.io/categories/travel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[DualShock 3 on PC]]></title>
-    <link href="http://initrc.github.io/2015/09/20/dualshock-3-on-pc/"/>
-    <id>http://initrc.github.io/2015/09/20/dualshock-3-on-pc/</id>
-    <published>2015-09-20T21:48:11.000Z</published>
-    <updated>2016-01-18T05:24:45.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=52549269" target="_blank" rel="external"><img src="/images/my-home-52549269.png" alt="pixiv #52549269"></a></p>
-<p>I occasionally game on Windows on my MacBook, and I’ve been thinking about using DualShock 3 since I got one from the PS TV bundle. Previously I was using <a href="http://emulation-general.wikia.com/wiki/MotioninJoy" target="_blank" rel="external">MotioninJoy</a> and <a href="http://betterds3.ciebiera.net/" target="_blank" rel="external">Better DS3</a> but it only worked when connected via USB. MotioninJoy does not support Apple’s bluetooth module. Found a better approach this weekend.</p>
-<p><a href="http://emulation-general.wikia.com/wiki/SCP_Driver_Package" target="_blank" rel="external">SCP DS3</a> is an open source driver that allows DualShock 2, 3 and 4 to work natively on Windows. I followed this <a href="http://forums.pcsx2.net/Thread-XInput-Wrapper-for-DS3-and-Play-com-USB-Dual-DS2-Controller" target="_blank" rel="external">post</a> and it worked with USB easily. Then I used <a href="https://www.youtube.com/watch?v=RuxXUKN1vz8" target="_blank" rel="external">Zadig</a> to override the driver so that any bluetooth module can work on SCP DS3.</p>
-<p>SCP DS3 is much better than MotioninJoy/Better DS3. It runs as a service so you don’t need to run any app. It connects and works just like on PlayStation, and it’s easy to disconnect by long pressing L1 + R1 + PS. You can customize key bindings but the default one works fine as an Xbox 360 controller. It supports 4 controllers at the same time, and most importantly it’s open sourced. Never worry about MotioninJoy being a trojan anymore.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://www.pixiv.net/member_illust.php?mode=medium&amp;illust_id=52549269" target="_blank" rel="external"><img src="/images/my-h]]>
-    </summary>
-    
-      <category term="bluetooth" scheme="http://initrc.github.io/tags/bluetooth/"/>
-    
-      <category term="pc" scheme="http://initrc.github.io/tags/pc/"/>
-    
-      <category term="playstation" scheme="http://initrc.github.io/tags/playstation/"/>
-    
-      <category term="Game" scheme="http://initrc.github.io/categories/game/"/>
     
   </entry>
   
