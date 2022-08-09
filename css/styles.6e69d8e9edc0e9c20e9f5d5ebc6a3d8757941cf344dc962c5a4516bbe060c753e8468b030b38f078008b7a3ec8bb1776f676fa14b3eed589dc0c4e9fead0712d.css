@@ -391,11 +391,6 @@ aside h3 {
   transform: scale(1.1);
 }
 
-.article:hover .article_thumb::after {
-  transition: opacity 0.1s ease-out;
-  opacity: 0.5;
-}
-
 .article:hover .article_excerpt:not(.visible) {
   height: 75px;
   opacity: 1;
